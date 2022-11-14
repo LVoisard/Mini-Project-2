@@ -3,6 +3,7 @@ import copy
 from queue import PriorityQueue
 from Vehicle import Orientation
 from Vehicle import Direction
+from ParkingLot import ParkingLot
 
 class RushHourPuzzleSolver(object):
 
@@ -70,7 +71,7 @@ class RushHourPuzzleSolver(object):
                         continue
 
                     for distance in range(1, max_distance_move + 1):
-                        new_state = copy.deepcopy(parkingLot)
+                        new_state = ParkingLot(origin=parkingLot)
                         new_vehicle = new_state.grid[x][y]
                         new_state.remove_vehicle(new_vehicle)
                         new_vehicle.move(distance, direction)
@@ -87,9 +88,11 @@ class RushHourPuzzleSolver(object):
 
 
     def solve(self, parkingLot):
-        visited_states = []
+        visited_states = set()
         open_states = PriorityQueue()
+        open_states_lookup = set()
         open_states.put(parkingLot)
+        open_states_lookup.add(str(parkingLot))
 
         while not open_states.empty() > 0:
             current_state = open_states.get()
@@ -97,18 +100,22 @@ class RushHourPuzzleSolver(object):
             if self.is_golden_state(current_state):
                 return current_state, len(visited_states)
 
-            visited_states.append(current_state)
+            visited_states.add(str(current_state))
+            open_states_lookup.remove(str(current_state))
 
             following_states = self.get_states(current_state)
 
             for state in following_states:
-                if any(s == state for s in visited_states):
+                if str(state) in visited_states:
                     continue
                 
                 state.cost = 1 + current_state.cost
                 state.previous_state = current_state
 
-                if not any(s == state for s in open_states.queue):
+                if str(state) not in open_states_lookup:
                     open_states.put(state)
+                    open_states_lookup.add(str(state))
+                
 
         return None, len(visited_states)
+

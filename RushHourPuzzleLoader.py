@@ -53,7 +53,7 @@ class RushHourPuzzleLoader(object):
                                 fuel=100,))
 
 
-            parkingLot = ParkingLot(GRIDSIZE, GRIDSIZE)
+            parkingLot = ParkingLot(origin=None, sizeX=GRIDSIZE, sizeY=GRIDSIZE)
             
             for vehicle in vehicles:
                 for vehicleFuelConfig in puzzleConfig[1::]:

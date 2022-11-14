@@ -3,17 +3,48 @@ from Vehicle import Vehicle
 from Vehicle import Orientation
 
 class ParkingLot(object):
+    def __init__(self, origin=None, sizeX=6, sizeY=6):
+        if origin:
+            self.copy_constructor(origin)
+        else:
+            self.non_copy_constructor(sizeX, sizeY)
 
-    def __init__(self, sizeX, sizeY):
+    def non_copy_constructor(self, sizeX, sizeY):
         self.sizeX = sizeX
         self.sizeY = sizeY
-        self.grid = np.ndarray((6,6), Vehicle)
+        self.grid = []
+        for row in range(self.sizeY):
+            self.grid.append([])
+            for column in range(self.sizeX):
+                self.grid[row].append(None)
         self.previous_state = None
         self.cost = 0
+
+    def copy_constructor(self, origin):
+        vehicles = []
+        self.sizeX = origin.sizeX
+        self.sizeY = origin.sizeY
+        self.grid = []
+        for row in range(self.sizeY):
+            self.grid.append([])
+            for column in range(self.sizeX):
+                self.grid[row].append(None)
+                v = origin.grid[row][column]
+                if v and v not in vehicles:
+                    vehicles.append(Vehicle(v.name, column, row, v.size, v.orientation, v.fuel))
+        
+        for vehicle in vehicles:
+            self.add_vehicle(vehicle)
+        self.previous_state = None
+        self.cost = 0
+
+    def __hash__(self):
+        return hash(tuple(self.grid))
 
     def __eq__(self, other: object):
         if not other:
             return False
+        
         for y in range(0, self.sizeY):
             for x in range(0, self.sizeX):
                 if not self.grid[y][x] == other.grid[y][x]:
@@ -34,20 +65,11 @@ class ParkingLot(object):
                 self.grid[vehicle.y + offset][vehicle.x] = vehicle
 
     def remove_vehicle(self, vehicle: Vehicle):
-         for offset in range(0, vehicle.size):
+        for offset in range(0, vehicle.size):
             if vehicle.orientation == Orientation.HORIZONTAL:
                 self.grid[vehicle.y][vehicle.x + offset] = None
             else:
                 self.grid[vehicle.y + offset][vehicle.x] = None
-
-    def get_vehicles(self):
-        vehicles = []
-        for y in range(0, self.sizeY):
-            for x in range(0, self.sizeX):
-                vehicle = self.grid[x][y]
-                if vehicle:
-                    vehicles.append(vehicle)
-        return vehicles
 
     def get_ambulance_vehicle(self):
         for y in range(0, self.sizeY):

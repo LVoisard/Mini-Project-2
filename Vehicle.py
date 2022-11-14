@@ -23,6 +23,9 @@ class Vehicle(object):
         self.size = size
         self.orientation = orientation
         self.fuel = fuel
+
+    def __hash__(self):
+        hash(self.name)
     
     def set_fuel(self, fuel):
         self.fuel = fuel
@@ -30,7 +33,7 @@ class Vehicle(object):
     def __str__(self):
         return 'Name: ' + self.name + str(' Position: ('+str(self.x) + ', ' + str(self.y)+')') + ' Size: ' + str(self.size) +' Orientation: ' + self.orientation.name +' Fuel: ' + str(self.fuel)
 
-    def __eq__(self, other: object):        
+    def __eq__(self, other: object):
         if not other:
             return False
         return self.name == other.name
