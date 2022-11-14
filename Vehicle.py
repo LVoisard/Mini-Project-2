@@ -16,24 +16,31 @@ class Vehicle(object):
     fuel: int
     infiniteFuel: bool
 
-    def __init__(self,name, x, y, size, orientation, fuel, infiniteFuel):
+    def __init__(self,name, x, y, size, orientation, fuel):
         self.name = name
         self.x = x
         self.y = y
         self.size = size
         self.orientation = orientation
         self.fuel = fuel
-        self.infiniteFuel = infiniteFuel
     
-    def set_fuel(self, fuel, infiniteFuel):
+    def set_fuel(self, fuel):
         self.fuel = fuel
-        self.infiniteFuel = infiniteFuel
 
     def __str__(self):
-        return 'Name: ' + self.name + str(' Position: ('+str(self.x) + ', ' + str(self.y)+')') + ' Size: ' + str(self.size) +' Orientation: ' + self.orientation.name +' Fuel: ' + (str(self.fuel) if not self.infiniteFuel else 'Infinite')
+        return 'Name: ' + self.name + str(' Position: ('+str(self.x) + ', ' + str(self.y)+')') + ' Size: ' + str(self.size) +' Orientation: ' + self.orientation.name +' Fuel: ' + str(self.fuel)
 
-    def slide(self, distance, direction):
-        return
+    def __eq__(self, other: object):        
+        if not other:
+            return False
+        return self.name == other.name
+
+    def move(self, distance, direction):
+        if self.orientation == Orientation.HORIZONTAL:
+            self.x += distance * direction.value
+        else:
+            self.y -= distance * direction.value
+        self.fuel -= distance
     
     def get_name(self):
         return self.name

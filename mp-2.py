@@ -1,10 +1,41 @@
 import numpy as np
+import copy
+import sys
+import time
 from ParkingLot import ParkingLot
 from RushHourPuzzleLoader import RushHourPuzzleLoader
+from RushHourPuzzleSolver import RushHourPuzzleSolver                
 
-parkingLots = RushHourPuzzleLoader.load_puzzles()
+sys.setrecursionlimit(10000)
 
-for i, parkingLot in enumerate(parkingLots):
-    print("\nPuzzle ", i+1)
+puzzles = RushHourPuzzleLoader.load_puzzles()
+
+for i, parkingLot in enumerate(puzzles):
+    print("\nPuzzle ", i + 1)
     print(parkingLot)
+    solver = RushHourPuzzleSolver()
     
+    startTime = time.perf_counter()
+    solution, number_of_states = solver.solve(parkingLot)
+    endTime = time.perf_counter()
+
+
+    if not solution:
+        print('no solution found')
+        continue
+
+    move_order = [solution]
+    while solution.previous_state and solution.previous_state.previous_state:
+        move_order.append(solution.previous_state)
+        solution = solution.previous_state
+    
+    move_order.reverse()
+
+    for i, move in enumerate(move_order):
+        print('\n move ', i + 1, '\n', move)
+
+    print('Moves: ', len(move_order))
+    print('States Explored: ', number_of_states)
+    print(f"Solved in {endTime - startTime:0.4f} seconds")
+    
+
