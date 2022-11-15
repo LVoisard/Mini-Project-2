@@ -76,9 +76,20 @@ class RushHourPuzzleSolver(object):
                         new_state.remove_vehicle(new_vehicle)
                         new_vehicle.move(distance, direction)
                         new_state.add_vehicle(new_vehicle)
-                        states.append(new_state)
                         vehicles_moved.append(new_vehicle)
+                        dir = ''
+                        if direction == Direction.FORWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
+                            dir = 'R'
+                        elif direction == Direction.BACKWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
+                            dir = 'L'
+                        elif direction == Direction.FORWARD and new_vehicle.orientation == Orientation.VERTICAL:
+                            dir = 'U'
+                        else:
+                            dir = 'D'
+
+                        states.append([new_state, [new_vehicle.name, dir, distance]])
         return states
+
 
     def is_golden_state(self, parkingLot):
         ambulance = parkingLot.get_ambulance_vehicle()
@@ -103,14 +114,13 @@ class RushHourPuzzleSolver(object):
             visited_states.add(str(current_state))
             open_states_lookup.remove(str(current_state))
 
-            following_states = self.get_states(current_state)
-
-            for state in following_states:
+            for state, moves in self.get_states(current_state):
                 if str(state) in visited_states:
                     continue
                 
                 state.cost = 1 + current_state.cost
                 state.previous_state = current_state
+                state.move = moves
 
                 if str(state) not in open_states_lookup:
                     open_states.put(state)

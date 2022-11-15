@@ -12,23 +12,18 @@ class ParkingLot(object):
     def non_copy_constructor(self, sizeX, sizeY):
         self.sizeX = sizeX
         self.sizeY = sizeY
-        self.grid = []
-        for row in range(self.sizeY):
-            self.grid.append([])
-            for column in range(self.sizeX):
-                self.grid[row].append(None)
+        self.grid = np.ndarray((6,6), Vehicle)        
         self.previous_state = None
+        self.move = []
         self.cost = 0
 
     def copy_constructor(self, origin):
         vehicles = []
         self.sizeX = origin.sizeX
         self.sizeY = origin.sizeY
-        self.grid = []
+        self.grid = np.ndarray((6,6), Vehicle)
         for row in range(self.sizeY):
-            self.grid.append([])
             for column in range(self.sizeX):
-                self.grid[row].append(None)
                 v = origin.grid[row][column]
                 if v and v not in vehicles:
                     vehicles.append(Vehicle(v.name, column, row, v.size, v.orientation, v.fuel))
@@ -36,10 +31,8 @@ class ParkingLot(object):
         for vehicle in vehicles:
             self.add_vehicle(vehicle)
         self.previous_state = None
+        self.move = []
         self.cost = 0
-
-    def __hash__(self):
-        return hash(tuple(self.grid))
 
     def __eq__(self, other: object):
         if not other:
@@ -79,7 +72,7 @@ class ParkingLot(object):
                     return vehicle
         return None
     
-    def __str__(self):
+    def print_board(self):
         displayGrid = np.ndarray((6,6), dtype=object)
         for x in range(0, self.sizeX):
             for y in range(0, self.sizeY):
@@ -88,5 +81,8 @@ class ParkingLot(object):
                     displayGrid[y][x] = self.grid[y][x].get_name()
                 else:
                     displayGrid[y][x] = '.'
-        return str(displayGrid)
+        print(displayGrid)
+
+    def __str__(self):
+        return str([element.name if element is not None else '.' for element in self.grid.flatten()])
 
