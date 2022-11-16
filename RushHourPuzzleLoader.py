@@ -53,13 +53,15 @@ class RushHourPuzzleLoader(object):
                                 fuel=100,))
 
 
-            parkingLot = ParkingLot(origin=None, sizeX=GRIDSIZE, sizeY=GRIDSIZE)
+            parkingLot = ParkingLot()
             
             for vehicle in vehicles:
                 for vehicleFuelConfig in puzzleConfig[1::]:
                     if(vehicleFuelConfig.startswith(vehicle.name)):
                         vehicle.set_fuel(int(vehicleFuelConfig[1:len(vehicleFuelConfig)]))
                 parkingLot.add_vehicle(vehicle)
+                if parkingLot.is_vehicle_at_exit(vehicle):
+                    parkingLot.remove_vehicle(vehicle)
             
             parkingLots.append(parkingLot)
         

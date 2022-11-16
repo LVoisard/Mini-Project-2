@@ -56,46 +56,37 @@ class RushHourPuzzleSolver(object):
 
     def get_states(self, parkingLot):
         states = []
-        vehicles_moved = []
-        for y in range(0, parkingLot.sizeY):
-            for x in range(0, parkingLot.sizeX):
+        for vehicle in parkingLot.vehicles:
+            for direction in Direction:
+                max_distance_move = self.can_move_vehicle(vehicle, direction, parkingLot)
 
-                vehicle = parkingLot.grid[x][y]
-                if not vehicle or any(v == vehicle for v in vehicles_moved):
+                if max_distance_move == 0:
                     continue
 
-                for direction in Direction:
-                    max_distance_move = self.can_move_vehicle(vehicle, direction, parkingLot)
-
-                    if max_distance_move == 0:
-                        continue
-
-                    for distance in range(1, max_distance_move + 1):
-                        new_state = ParkingLot(origin=parkingLot)
-                        new_vehicle = new_state.grid[x][y]
-                        new_state.remove_vehicle(new_vehicle)
-                        new_vehicle.move(distance, direction)
+                for distance in range(1, max_distance_move + 1):
+                    new_state = ParkingLot(origin=parkingLot)
+                    new_vehicle = new_state.grid[vehicle.y][vehicle.x]
+                    new_state.remove_vehicle(new_vehicle)
+                    new_vehicle.move(distance, direction)
+                    if not new_state.is_vehicle_at_exit(new_vehicle):
                         new_state.add_vehicle(new_vehicle)
-                        vehicles_moved.append(new_vehicle)
-                        dir = ''
-                        if direction == Direction.FORWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
-                            dir = 'R'
-                        elif direction == Direction.BACKWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
-                            dir = 'L'
-                        elif direction == Direction.FORWARD and new_vehicle.orientation == Orientation.VERTICAL:
-                            dir = 'U'
-                        else:
-                            dir = 'D'
+                    dir = ''
+                    if direction == Direction.FORWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
+                        dir = 'R'
+                    elif direction == Direction.BACKWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
+                        dir = 'L'
+                    elif direction == Direction.FORWARD and new_vehicle.orientation == Orientation.VERTICAL:
+                        dir = 'U'
+                    else:
+                        dir = 'D'
 
-                        states.append([new_state, [new_vehicle.name, dir, distance]])
+                    states.append([new_state, [new_vehicle.name, dir, distance]])
         return states
 
 
     def is_golden_state(self, parkingLot):
         ambulance = parkingLot.get_ambulance_vehicle()
-        if ambulance.x == 4 and ambulance.y == 2:
-            return True
-        return False
+        return not ambulance
 
 
     def solve(self, parkingLot):
@@ -107,12 +98,12 @@ class RushHourPuzzleSolver(object):
 
         while not open_states.empty() > 0:
             current_state = open_states.get()
+            open_states_lookup.remove(str(current_state))
 
             if self.is_golden_state(current_state):
                 return current_state, len(visited_states)
 
             visited_states.add(str(current_state))
-            open_states_lookup.remove(str(current_state))
 
             for state, moves in self.get_states(current_state):
                 if str(state) in visited_states:
