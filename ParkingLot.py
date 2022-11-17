@@ -2,6 +2,7 @@ import numpy as np
 import copy
 from Vehicle import Vehicle
 from Vehicle import Orientation
+from Vehicle import Direction
 
 class ParkingLot(object):
     def __init__(self, origin=None):
@@ -86,6 +87,87 @@ class ParkingLot(object):
             if vehicle.x == 6 - vehicle.size and vehicle.y == 2:
                 return True
         return False
+
+    def can_move_vehicle(self, vehicle, direction):
+        """Returns the maximum distance for a vehicle in a specified direction"""
+        if vehicle.fuel == 0:
+            return 0
+        
+        if vehicle.orientation == Orientation.HORIZONTAL and direction == Direction.FORWARD:
+            distance = 0
+            while (vehicle.x + vehicle.size) + distance < self.sizeX:
+                v = self.grid[vehicle.y][vehicle.x + distance + vehicle.size]
+                if not v:
+                    distance += 1
+                else:
+                    return distance
+            return vehicle.fuel if vehicle.fuel < distance else distance
+
+        elif vehicle.orientation == Orientation.HORIZONTAL and direction == Direction.BACKWARD:
+            distance = 0
+            while vehicle.x - distance - 1 >= 0:
+                v = self.grid[vehicle.y][vehicle.x - distance - 1]
+                if not v:
+                    distance += 1
+                else:
+                    return distance
+            return vehicle.fuel if vehicle.fuel < distance else distance
+
+        elif vehicle.orientation == Orientation.VERTICAL and direction == Direction.FORWARD:
+            distance = 0
+            while vehicle.y - distance - 1 >= 0:
+                v = self.grid[vehicle.y - distance - 1][vehicle.x]
+                if not v:
+                    distance += 1
+                else:
+                    return distance
+            return vehicle.fuel if vehicle.fuel < distance else distance
+
+        elif vehicle.orientation == Orientation.VERTICAL and direction == Direction.BACKWARD:
+            distance = 0
+            while (vehicle.y + vehicle.size) + distance < self.sizeY:
+                v = self.grid[vehicle.y + distance + vehicle.size][vehicle.x]
+                if not v:
+                    distance += 1
+                else:
+                    return distance
+            return vehicle.fuel if vehicle.fuel < distance else distance
+        
+        return 0
+
+    def get_states(self):
+        states = []
+        for vehicle in self.vehicles:
+            for direction in Direction:
+                max_distance_move = self.can_move_vehicle(vehicle, direction)
+
+                if max_distance_move == 0:
+                    continue
+
+                for distance in range(1, max_distance_move + 1):
+                    new_state = ParkingLot(origin=self)
+                    new_vehicle = new_state.grid[vehicle.y][vehicle.x]
+                    new_state.remove_vehicle(new_vehicle)
+                    new_vehicle.move(distance, direction)
+                    if not new_state.is_vehicle_at_exit(new_vehicle):
+                        new_state.add_vehicle(new_vehicle)
+                    dir = ''
+                    if direction == Direction.FORWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
+                        dir = 'R'
+                    elif direction == Direction.BACKWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
+                        dir = 'L'
+                    elif direction == Direction.FORWARD and new_vehicle.orientation == Orientation.VERTICAL:
+                        dir = 'U'
+                    else:
+                        dir = 'D'
+
+                    states.append([new_state, [new_vehicle.name, dir, distance]])
+        return states
+
+
+    def is_golden_state(self):
+        ambulance = self.get_ambulance_vehicle()
+        return not ambulance
 
     def __str__(self):
         return ''.join([element.name if element is not None else '.' for element in self.grid.flatten()])

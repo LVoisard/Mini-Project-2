@@ -5,91 +5,9 @@ from Vehicle import Orientation
 from Vehicle import Direction
 from ParkingLot import ParkingLot
 
-class RushHourPuzzleSolver(object):
+class UCSRushHourSolver(object):
 
-    def can_move_vehicle(self, vehicle, direction, parkingLot):
-        """Returns the maximum distance for a vehicle in a specified direction"""
-        if vehicle.fuel == 0:
-            return 0
-        
-        if vehicle.orientation == Orientation.HORIZONTAL and direction == Direction.FORWARD:
-            distance = 0
-            while (vehicle.x + vehicle.size) + distance < parkingLot.sizeX:
-                v = parkingLot.grid[vehicle.y][vehicle.x + distance + vehicle.size]
-                if not v:
-                    distance += 1
-                else:
-                    return distance
-            return vehicle.fuel if vehicle.fuel < distance else distance
-
-        elif vehicle.orientation == Orientation.HORIZONTAL and direction == Direction.BACKWARD:
-            distance = 0
-            while vehicle.x - distance - 1 >= 0:
-                v = parkingLot.grid[vehicle.y][vehicle.x - distance - 1]
-                if not v:
-                    distance += 1
-                else:
-                    return distance
-            return vehicle.fuel if vehicle.fuel < distance else distance
-
-        elif vehicle.orientation == Orientation.VERTICAL and direction == Direction.FORWARD:
-            distance = 0
-            while vehicle.y - distance - 1 >= 0:
-                v = parkingLot.grid[vehicle.y - distance - 1][vehicle.x]
-                if not v:
-                    distance += 1
-                else:
-                    return distance
-            return vehicle.fuel if vehicle.fuel < distance else distance
-
-        elif vehicle.orientation == Orientation.VERTICAL and direction == Direction.BACKWARD:
-            distance = 0
-            while (vehicle.y + vehicle.size) + distance < parkingLot.sizeY:
-                v = parkingLot.grid[vehicle.y + distance + vehicle.size][vehicle.x]
-                if not v:
-                    distance += 1
-                else:
-                    return distance
-            return vehicle.fuel if vehicle.fuel < distance else distance
-        
-        return 0
-
-    def get_states(self, parkingLot):
-        states = []
-        for vehicle in parkingLot.vehicles:
-            for direction in Direction:
-                max_distance_move = self.can_move_vehicle(vehicle, direction, parkingLot)
-
-                if max_distance_move == 0:
-                    continue
-
-                for distance in range(1, max_distance_move + 1):
-                    new_state = ParkingLot(origin=parkingLot)
-                    new_vehicle = new_state.grid[vehicle.y][vehicle.x]
-                    new_state.remove_vehicle(new_vehicle)
-                    new_vehicle.move(distance, direction)
-                    if not new_state.is_vehicle_at_exit(new_vehicle):
-                        new_state.add_vehicle(new_vehicle)
-                    dir = ''
-                    if direction == Direction.FORWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
-                        dir = 'R'
-                    elif direction == Direction.BACKWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
-                        dir = 'L'
-                    elif direction == Direction.FORWARD and new_vehicle.orientation == Orientation.VERTICAL:
-                        dir = 'U'
-                    else:
-                        dir = 'D'
-
-                    states.append([new_state, [new_vehicle.name, dir, distance]])
-        return states
-
-
-    def is_golden_state(self, parkingLot):
-        ambulance = parkingLot.get_ambulance_vehicle()
-        return not ambulance
-
-
-    def solve(self, parkingLot):
+    def solve(self, parkingLot, heuristic=None):
         visited_states = set()
         open_states = PriorityQueue()
         open_states_lookup = set()
@@ -100,16 +18,50 @@ class RushHourPuzzleSolver(object):
             current_state = open_states.get()
             open_states_lookup.remove(str(current_state))
 
-            if self.is_golden_state(current_state):
+            if current_state.is_golden_state():
                 return current_state, len(visited_states)
 
             visited_states.add(str(current_state))
 
-            for state, moves in self.get_states(current_state):
+            next_states = current_state.get_states()
+            for state, moves in next_states:
                 if str(state) in visited_states:
                     continue
                 
-                state.cost = 1 + current_state.cost
+                state.cost = current_state.cost + 1
+                state.previous_state = current_state
+                state.move = moves
+
+                if str(state) not in open_states_lookup:
+                    open_states.put(state)
+                    open_states_lookup.add(str(state))
+                
+
+        return None, len(visited_states)
+
+class GBFSRushHourSolver(object):
+    def solve(self, parkingLot, heuristic):
+        visited_states = set()
+        open_states = PriorityQueue()
+        open_states_lookup = set()
+        open_states.put(parkingLot)
+        open_states_lookup.add(str(parkingLot))
+
+        while not open_states.empty() > 0:
+            current_state = open_states.get()
+            open_states_lookup.remove(str(current_state))
+
+            if current_state.is_golden_state():
+                return current_state, len(visited_states)
+
+            visited_states.add(str(current_state))
+
+            next_states = current_state.get_states()
+            for state, moves in next_states:
+                if str(state) in visited_states:
+                    continue
+                
+                state.cost = heuristic.calculate(current_state)
                 state.previous_state = current_state
                 state.move = moves
 
