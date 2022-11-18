@@ -64,11 +64,9 @@ class ParkingLot(object):
         self.vehicles.remove(vehicle)
 
     def get_ambulance_vehicle(self):
-        for y in range(0, self.sizeY):
-            for x in range(0, self.sizeX):
-                vehicle = self.grid[x][y]
-                if vehicle and vehicle.name == 'A':
-                    return vehicle
+        for vehicle in self.vehicles:
+            if vehicle.name == 'A':
+                return vehicle
         return None
     
     def print_board(self):
