@@ -10,7 +10,7 @@ import Heuristics
 
 puzzles = RushHourPuzzleLoader.load_puzzles()
 
-solvers = [RushHourPuzzleSolver.UCSRushHourSolver(), RushHourPuzzleSolver.GBFSRushHourSolver()]
+solvers = [RushHourPuzzleSolver.UCSRushHourSolver(), RushHourPuzzleSolver.GBFSRushHourSolver(), RushHourPuzzleSolver.ASTARRushHourSolver()]
 heuristics = [Heuristics.BlockingVehiclesHeuristic(), Heuristics.BlockedPositionsHeuristic(), Heuristics.BlockingVehiclesHeuristic(3), Heuristics.OpenPositionsHeuristic()]
 for heuristic in heuristics:
     for s, solver in enumerate(solvers):
