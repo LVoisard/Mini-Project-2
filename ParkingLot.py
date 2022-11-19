@@ -18,7 +18,9 @@ class ParkingLot(object):
         self.previous_state = None
         self.vehicles = []
         self.move = []
-        self.cost = 0
+        self.gCost = 0
+        self.hCost = 0
+        self.fCost = 0
 
     def copy_constructor(self, origin):
         self.sizeX = origin.sizeX
@@ -28,8 +30,10 @@ class ParkingLot(object):
         for v in origin.vehicles:
             self.add_vehicle(Vehicle(v.name, v.x, v.y, v.size, v.orientation, v.fuel))
         self.previous_state = None
-        self.move = []
-        self.cost = 0
+        self.move = origin.move
+        self.gCost = 0
+        self.hCost = 0
+        self.fCost = 0
 
     def __eq__(self, other: object):
         if not other:
@@ -42,10 +46,10 @@ class ParkingLot(object):
         return True
 
     def __lt__(self, other):
-        return self.cost < other.cost
+        return self.fCost < other.fCost
 
     def __gt__(self, other):
-        return self.cost > other.cost
+        return self.fCost > other.fCost
 
     def add_vehicle(self, vehicle: Vehicle):
         for offset in range(0, vehicle.size):
@@ -69,16 +73,17 @@ class ParkingLot(object):
                 return vehicle
         return None
     
-    def print_board(self):
-        displayGrid = np.ndarray((6,6), dtype=object)
+    def get_board_display(self):
+        displayGrid = ''
         for x in range(0, self.sizeX):
             for y in range(0, self.sizeY):
-                vehicle = self.grid[y][x]
+                vehicle = self.grid[x][y]
                 if vehicle:
-                    displayGrid[y][x] = self.grid[y][x].get_name()
+                    displayGrid += self.grid[x][y].get_name()
                 else:
-                    displayGrid[y][x] = '.'
-        print(displayGrid)
+                    displayGrid += '.'
+            displayGrid += '\n'
+        return str(displayGrid)
 
     def is_vehicle_at_exit(self, vehicle):
         if vehicle.orientation == Orientation.HORIZONTAL:
@@ -147,7 +152,7 @@ class ParkingLot(object):
                     new_vehicle = new_state.grid[vehicle.y][vehicle.x]
                     new_state.remove_vehicle(new_vehicle)
                     new_vehicle.move(distance, direction)
-                    if not new_state.is_vehicle_at_exit(new_vehicle):
+                    if new_vehicle.name == 'A' or not new_state.is_vehicle_at_exit(new_vehicle):
                         new_state.add_vehicle(new_vehicle)
                     dir = ''
                     if direction == Direction.FORWARD and new_vehicle.orientation == Orientation.HORIZONTAL:
@@ -159,13 +164,15 @@ class ParkingLot(object):
                     else:
                         dir = 'D'
 
-                    states.append([new_state, [new_vehicle.name, dir, distance]])
+                    states.append([new_state, [new_vehicle, dir, distance]])
         return states
 
 
     def is_golden_state(self):
         ambulance = self.get_ambulance_vehicle()
-        return not ambulance
+        if ambulance:
+            return self.is_vehicle_at_exit(ambulance)
+        return False
 
     def __str__(self):
         return ''.join([element.name if element is not None else '.' for element in self.grid.flatten()])
