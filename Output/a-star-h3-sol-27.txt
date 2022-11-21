@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: BCCO..B.DO..AADO...PPP.............. 
+
+BCCO..
+B.DO..
+AADO..
+.PPP..
+......
+......
+
+Car fuel available: B:100, C:100, O:100, D:100, A:100, P:100
+
+Runtime: 0.01204
+Solution path: P R 2; D D 3; P L 3; O D 3; A R 4 
+Search path length: 24 
+Solution path length: 5 
+
+P R 2 	 98 BCCO..B.DO..AADO.....PPP............ 	 P98
+D D 3 	 97 BCCO..B..O..AA.O.....PPP..D.....D... 	 P98 D97
+P L 3 	 95 BCCO..B..O..AA.O..PPP.....D.....D... 	 P95 D97
+O D 3 	 97 BCC...B.....AA....PPPO....DO....DO.. 	 P95 D97 O97
+A R 4 	 96 BCC...B.........AAPPPO....DO....DO.. 	 P95 D97 O97 A96
+
+! P95 D97 O97 A96
+BCC...
+B.....
+....AA
+PPPO..
+..DO..
+..DO..
+
+--------------------------------------------------------------------------------

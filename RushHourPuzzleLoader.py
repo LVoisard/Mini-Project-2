@@ -5,11 +5,10 @@ from ParkingLot import ParkingLot
 
 class RushHourPuzzleLoader(object):
     @staticmethod
-    def load_puzzles():
-        
+    def load_puzzles(load_from_samples):        
         GRIDSIZE = 6
 
-        puzzlesFile = open("sample-input.txt")
+        puzzlesFile = open("sample-input.txt") if load_from_samples else open("Input Puzzles\\hand-written-puzzles.txt")
         puzzleConfigurations = []
         parkingLots = []
 
@@ -66,3 +65,9 @@ class RushHourPuzzleLoader(object):
             parkingLots.append(parkingLot)
         
         return parkingLots
+
+    @staticmethod
+    def save_puzzles(directory, puzzles):
+        file = open(f'{directory}puzzles.txt', 'w')
+        for i, puzzle in enumerate(puzzles):
+            file.write(f'{str(puzzle)}\n')

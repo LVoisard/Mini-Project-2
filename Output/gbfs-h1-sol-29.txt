@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: ...DDO.....O...AAO...PGG...P.....P.. 
+
+...DDO
+.....O
+...AAO
+...PGG
+...P..
+...P..
+
+Car fuel available: D:100, O:100, A:100, P:100, G:100
+
+Runtime: 0.01485
+Solution path: D L 3; A L 3; P U 3; G L 3; P D 3; O D 3; A R 4 
+Search path length: 42 
+Solution path length: 7 
+
+D L 3 	 97 DD...O.....O...AAO...PGG...P.....P.. 	 D97
+A L 3 	 97 DD...O.....OAA...O...PGG...P.....P.. 	 D97 A97
+P U 3 	 97 DD.P.O...P.OAA.P.O....GG............ 	 D97 A97 P97
+G L 3 	 97 DD.P.O...P.OAA.P.O.GG............... 	 D97 A97 P97 G97
+P D 3 	 94 DD...O.....OAA...O.GGP.....P.....P.. 	 D97 A97 P94 G97
+O D 3 	 97 DD..........AA.....GGP.O...P.O...P.O 	 D97 A97 P94 G97 O97
+A R 4 	 93 DD..............AA.GGP.O...P.O...P.O 	 D97 A93 P94 G97 O97
+
+! D97 A93 P94 G97 O97
+DD....
+......
+....AA
+.GGP.O
+...P.O
+...P.O
+
+--------------------------------------------------------------------------------

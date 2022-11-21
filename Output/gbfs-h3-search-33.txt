@@ -1,0 +1,71 @@
+0 0 0 OOO.....P...AAP.....P..QRRR..Q.....Q  
+6 0 6 .OOO....P...AAP.....P..QRRR..Q.....Q O99  
+6 0 6 ...OOO..P...AAP.....P..QRRR..Q.....Q O97  
+6 0 6 OOO.....P...AAP.....P..Q.RRR.Q.....Q R99  
+6 0 6 OOO.....P...AAP.....P..Q..RRRQ.....Q R98  
+6 0 6 .OOO....P...AAP.....P..Q..RRRQ.....Q R98 O99  
+6 0 6 ...OOO..P...AAP.....P..Q.RRR.Q.....Q R99 O97  
+6 0 6 ...OOO..P...AAP.....P..Q..RRRQ.....Q R98 O97  
+6 0 6 OOO..Q..P..QAAP..Q..P....RRR........ Q97 R99  
+6 0 6 OOO..Q..P..QAAP..Q..P.....RRR....... Q97 R98  
+6 0 6 .OOO.Q..P..QAAP..Q..P.....RRR....... Q97 R98 O99  
+6 0 6 ...OOO..P..QAAP..Q..P..Q.RRR........ Q98 R99 O97  
+6 0 6 ...OOO..P..QAAP..Q..P..Q..RRR....... Q98 R98 O97  
+6 0 6 ...OOO..P..QAAP..Q..P..QRRR......... Q98 O97  
+6 0 6 OOO..Q..P..QAAP..Q..P...RRR......... Q97  
+6 0 6 ...OOO..P...AAP..Q..P..QRRR..Q...... Q99 O97  
+6 0 6 ...OOO..P...AAP..Q..P..Q..RRRQ...... Q99 R98 O97  
+6 0 6 ..POOO..P...AAP........Q..RRRQ.....Q P99 R98 O97  
+6 0 6 ..POOO..P...AAP........QRRR..Q.....Q P99 O97  
+6 0 6 ...OOO..P...AAP..Q..P..Q.RRR.Q...... Q99 R99 O97  
+6 0 6 ..POOO..P...AAP........Q.RRR.Q.....Q P99 R99 O97  
+6 0 6 ..OOO...P...AAP.....P..QRRR..Q.....Q O98  
+6 0 6 OOO.....P..QAAP..Q..P..QRRR......... Q98  
+6 0 6 .OOO....P...AAP.....P..Q.RRR.Q.....Q R99 O99  
+6 0 6 .OOO....P..QAAP..Q..P..Q..RRR....... Q98 R98 O99  
+6 0 6 .OOO....P...AAP..Q..P..Q..RRRQ...... Q99 R98 O99  
+6 0 6 .OOO.Q..P..QAAP..Q..P...RRR......... Q97 O99  
+6 0 6 OOO.....P..QAAP..Q..P..Q..RRR....... Q98 R98  
+6 0 6 OOO.....P...AAP..Q..P..Q..RRRQ...... Q99 R98  
+6 0 6 OOO.....P...AAP..Q..P..QRRR..Q...... Q99  
+6 0 6 .OOO....P..QAAP..Q..P..QRRR......... Q98 O99  
+6 0 6 ..OOO...P...AAP.....P..Q..RRRQ.....Q O98 R98  
+6 0 6 OOO.....P..QAAP..Q..P..Q.RRR........ Q98 R99  
+6 0 6 .OOO....P...AAP..Q..P..QRRR..Q...... Q99 O99  
+6 0 6 OOO.....P...AAP..Q..P..Q.RRR.Q...... Q99 R99  
+6 0 6 ..OOO...P...AAP.....P..Q.RRR.Q.....Q O98 R99  
+9 0 9 OOO..Q..P..QAAP..Q..P......RRR...... R97 Q97 R99  
+9 0 9 .OOO.Q..P..QAAP..Q..P......RRR...... R97 Q97 R98 O99  
+9 0 9 ..OOO...P..QAAP..Q..P..Q.RRR........ O96 Q98 R99 O97  
+9 0 9 ..OOO...P...AAP..Q..P..QRRR..Q...... O96 Q99 O97  
+9 0 9 ..OOO...P...AAP..Q..P..Q..RRRQ...... O96 Q99 R98 O97  
+9 0 9 OOO..Q.....QAA...Q..P.....PRRR..P... P98 R97 Q97 R99  
+6 0 6 ..OOOQ.....QAA...Q..P.....PRRR..P... O98 P98 R97 Q97 R99  
+6 0 6 OOO..Q.....Q.AA..Q..P.....PRRR..P... A99 P98 R97 Q97 R99  
+6 0 6 OOO........QAA...Q..P..Q..PRRR..P... Q96 P98 R97 Q97 R99  
+6 0 6 ..OOOQ.....Q.AA..Q..P.....PRRR..P... A99 O98 P98 R97 Q97 R99  
+6 0 6 ..OOOQ.....Q...AAQ..P.....PRRR..P... A97 O98 P98 R97 Q97 R99  
+6 0 6 ..OOO......QAA...Q..P..Q..PRRR..P... Q96 O98 P98 R97 Q97 R99  
+6 0 6 ..OOOQ.....Q..AA.Q..P.....PRRR..P... A98 O98 P98 R97 Q97 R99  
+6 0 6 ..OOO......Q.AA..Q..P..Q..PRRR..P... Q96 A99 O98 P98 R97 Q97 R99  
+6 0 6 OOO..Q.....Q..AA.Q..P.....PRRR..P... A98 P98 R97 Q97 R99  
+6 0 6 OOO..Q.....Q...AAQ..P.....PRRR..P... A97 P98 R97 Q97 R99  
+6 0 6 .OOO.Q.....Q..AA.Q..P.....PRRR..P... O97 A98 O98 P98 R97 Q97 R99  
+6 0 6 ...OOO.....Q.AA..Q..P..Q..PRRR..P... O97 Q96 A99 O98 P98 R97 Q97 R99  
+6 0 6 OOO..Q..P..Q..PAAQ..P......RRR...... P96 A97 P98 R97 Q97 R99  
+6 0 6 .OOO.......Q..AA.Q..P..Q..PRRR..P... Q96 O97 A98 O98 P98 R97 Q97 R99  
+6 0 6 ...OOO.....Q...AAQ..P..Q..PRRR..P... A97 O97 Q96 A99 O98 P98 R97 Q97 R99  
+6 0 6 OOO..Q..P..Q..PAAQ..P...RRR......... R94 P96 A97 P98 R97 Q97 R99  
+6 0 6 .OOO.......Q...AAQ..P..Q..PRRR..P... A97 Q96 O97 A98 O98 P98 R97 Q97 R99  
+6 0 6 ...OOO..P..Q..PAAQ..P..Q...RRR...... P96 A97 O97 Q96 A99 O98 P98 R97 Q97 R99  
+6 0 6 ..POOO..P..Q..PAAQ.....Q...RRR...... P95 A97 O97 Q96 A99 O98 P98 R97 Q97 R99  
+6 0 6 OOO.....P.....PAAQ..P..QRRR..Q...... Q95 R94 P96 A97 P98 R97 Q97 R99  
+6 0 6 ...OOO..P..Q..PAAQ..P..QRRR......... R94 P96 A97 O97 Q96 A99 O98 P98 R97 Q97 R99  
+6 0 6 ..OOO...P..Q..PAAQ..P..Q...RRR...... O96 P96 A97 O97 Q96 A99 O98 P98 R97 Q97 R99  
+6 0 6 ..POOO..P..Q..PAAQ.....Q..RRR....... R96 P95 A97 O97 Q96 A99 O98 P98 R97 Q97 R99  
+6 0 6 ..OOO...P.....PAAQ..P..QRRR..Q...... O98 Q95 R94 P96 A97 P98 R97 Q97 R99  
+6 0 6 OOO.....P.....PAAQ..P..Q.RRR.Q...... R93 Q95 R94 P96 A97 P98 R97 Q97 R99  
+6 0 6 OOO.....P.....PAAQ..P..Q..RRRQ...... R92 Q95 R94 P96 A97 P98 R97 Q97 R99  
+6 0 6 ...OOO..P.....PAA...P..QRRR..Q.....Q Q94 R94 P96 A97 O97 Q96 A99 O98 P98 R97 Q97 R99  
+3 0 3 .OOO....P.....PAA...P..QRRR..Q.....Q O95 Q94 R94 P96 A97 O97 Q96 A99 O98 P98 R97 Q97 R99  
+3 0 3 ...OOO..P.....P.AA..P..QRRR..Q.....Q A96 Q94 R94 P96 A97 O97 Q96 A99 O98 P98 R97 Q97 R99  

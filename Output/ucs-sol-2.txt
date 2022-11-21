@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: B..OOOB..C.PAA.CDPQQQ.DP..E.FFGGEHH. 
+
+B..OOO
+B..C.P
+AA.CDP
+QQQ.DP
+..E.FF
+GGEHH.
+
+Car fuel available: B:100, O:100, C:100, P:100, A:100, D:100, Q:100, E:100, F:100, G:100, H:100
+
+Runtime: 1.32579
+Solution path: A R 1; B D 1; O L 3; F L 1; C U 1; P D 2; D U 2; A R 3 
+Search path length: 2790 
+Solution path length: 8 
+
+A R 1 	 99 B..OOOB..C.P.AACDPQQQ.DP..E.FFGGEHH. 	 A99
+B D 1 	 99 ...OOOB..C.PBAACDPQQQ.DP..E.FFGGEHH. 	 A99 B99
+O L 3 	 97 OOO...B..C.PBAACDPQQQ.DP..E.FFGGEHH. 	 A99 B99 O97
+F L 1 	 99 OOO...B..C.PBAACDPQQQ.DP..EFF.GGEHH. 	 A99 B99 O97 F99
+C U 1 	 99 OOOC..B..C.PBAA.DPQQQ.DP..EFF.GGEHH. 	 A99 B99 O97 F99 C99
+P D 2 	 98 OOOC..B..C..BAA.D.QQQ.DP..EFFPGGEHHP 	 A99 B99 O97 F99 C99 P98
+D U 2 	 98 OOOCD.B..CD.BAA...QQQ..P..EFFPGGEHHP 	 A99 B99 O97 F99 C99 P98 D98
+A R 3 	 96 OOOCD.B..CD.B...AAQQQ..P..EFFPGGEHHP 	 A96 B99 O97 F99 C99 P98 D98
+
+! A96 B99 O97 F99 C99 P98 D98
+OOOCD.
+B..CD.
+B...AA
+QQQ..P
+..EFFP
+GGEHHP
+
+--------------------------------------------------------------------------------

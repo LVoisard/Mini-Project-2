@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: ...OOO...BCPAA.BCP..QDDP..QEE...QRRR 
+
+...OOO
+...BCP
+AA.BCP
+..QDDP
+..QEE.
+..QRRR
+
+Car fuel available: O:100, B:100, C:100, P:100, A:100, Q:100, D:100, E:100, R:100
+
+Runtime: 3.03657
+Solution path: O L 3; C U 1; B U 1; A R 3; Q U 2; R L 3; P D 2; A R 1 
+Search path length: 5413 
+Solution path length: 8 
+
+O L 3 	 97 OOO......BCPAA.BCP..QDDP..QEE...QRRR 	 O97
+C U 1 	 99 OOO.C....BCPAA.B.P..QDDP..QEE...QRRR 	 O97 C99
+B U 1 	 99 OOOBC....BCPAA...P..QDDP..QEE...QRRR 	 O97 C99 B99
+A R 3 	 97 OOOBC....BCP...AAP..QDDP..QEE...QRRR 	 O97 C99 B99 A97
+Q U 2 	 98 OOOBC...QBCP..QAAP..QDDP...EE....RRR 	 O97 C99 B99 A97 Q98
+R L 3 	 97 OOOBC...QBCP..QAAP..QDDP...EE.RRR... 	 O97 C99 B99 A97 Q98 R97
+P D 2 	 98 OOOBC...QBC...QAA...QDDP...EEPRRR..P 	 O97 C99 B99 A97 Q98 R97 P98
+A R 1 	 96 OOOBC...QBC...Q.AA..QDDP...EEPRRR..P 	 O97 C99 B99 A96 Q98 R97 P98
+
+! O97 C99 B99 A96 Q98 R97 P98
+OOOBC.
+..QBC.
+..Q.AA
+..QDDP
+...EEP
+RRR..P
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: ............AAO...BBOCCP..ODFPQQQDFP 
+
+......
+......
+AAO...
+BBOCCP
+..ODFP
+QQQDFP
+
+Car fuel available: A:100, O:100, B:100, C:100, P:100, D:100, F:100, Q:100
+
+Runtime: 0.34444
+Solution path: O U 2; C L 1; F U 4; P U 3; C R 2; D U 4; Q R 3; O D 3; A R 3; O U 2; Q L 1; C L 1; P D 3; A R 1 
+Search path length: 756 
+Solution path length: 14 
+
+O U 2 	 98 ..O.....O...AAO...BB.CCP...DFPQQQDFP 	 O98
+C L 1 	 99 ..O.....O...AAO...BBCC.P...DFPQQQDFP 	 O98 C99
+F U 4 	 96 ..O.F...O.F.AAO...BBCC.P...D.PQQQD.P 	 O98 C99 F96
+P U 3 	 97 ..O.FP..O.FPAAO..PBBCC.....D..QQQD.. 	 O98 C99 F96 P97
+C R 2 	 97 ..O.FP..O.FPAAO..PBB..CC...D..QQQD.. 	 O98 C97 F96 P97
+D U 4 	 96 ..ODFP..ODFPAAO..PBB..CC......QQQ... 	 O98 C97 F96 P97 D96
+Q R 3 	 97 ..ODFP..ODFPAAO..PBB..CC.........QQQ 	 O98 C97 F96 P97 D96 Q97
+O D 3 	 95 ...DFP...DFPAA...PBBO.CC..O.....OQQQ 	 O95 C97 F96 P97 D96 Q97
+A R 3 	 97 ...DFP...DFP...AAPBBO.CC..O.....OQQQ 	 O95 C97 F96 P97 D96 Q97 A97
+O U 2 	 93 ...DFP..ODFP..OAAPBBO.CC.........QQQ 	 O93 C97 F96 P97 D96 Q97 A97
+Q L 1 	 96 ...DFP..ODFP..OAAPBBO.CC........QQQ. 	 O93 C97 F96 P97 D96 Q96 A97
+C L 1 	 96 ...DFP..ODFP..OAAPBBOCC.........QQQ. 	 O93 C96 F96 P97 D96 Q96 A97
+P D 3 	 94 ...DF...ODF...OAA.BBOCCP.....P..QQQP 	 O93 C96 F96 P94 D96 Q96 A97
+A R 1 	 96 ...DF...ODF...O.AABBOCCP.....P..QQQP 	 O93 C96 F96 P94 D96 Q96 A96
+
+! O93 C96 F96 P94 D96 Q96 A96
+...DF.
+..ODF.
+..O.AA
+BBOCCP
+.....P
+..QQQP
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,52 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: ....OP....OP..AAOP..QRBB..QRDD..QRCC 
+
+....OP
+....OP
+..AAOP
+..QRBB
+..QRDD
+..QRCC
+
+Car fuel available: O:100, P:100, A:100, Q:100, R:100, B:100, D:100, C:100
+
+Runtime: 0.13109
+Solution path: A L 1; R U 2; C L 1; D L 1; R U 1; B L 1; P D 3; A L 1; Q U 2; C L 3; D L 2; Q U 1; B L 2; C R 2; O D 3; R D 2; C L 1; R D 1; B L 1; Q D 1; C L 1; D L 1; Q D 2; A R 4 
+Search path length: 270 
+Solution path length: 24 
+
+A L 1 	 99 ....OP....OP.AA.OP..QRBB..QRDD..QRCC 	 A99
+R U 2 	 98 ....OP...ROP.AAROP..QRBB..Q.DD..Q.CC 	 A99 R98
+C L 1 	 99 ....OP...ROP.AAROP..QRBB..Q.DD..QCC. 	 A99 R98 C99
+D L 1 	 99 ....OP...ROP.AAROP..QRBB..QDD...QCC. 	 A99 R98 C99 D99
+R U 1 	 97 ...ROP...ROP.AAROP..Q.BB..QDD...QCC. 	 A99 R97 C99 D99
+B L 1 	 99 ...ROP...ROP.AAROP..QBB...QDD...QCC. 	 A99 R97 C99 D99 B99
+P D 3 	 97 ...RO....RO..AARO...QBBP..QDDP..QCCP 	 A99 R97 C99 D99 B99 P97
+A L 1 	 98 ...RO....RO.AA.RO...QBBP..QDDP..QCCP 	 A98 R97 C99 D99 B99 P97
+Q U 2 	 98 ...RO...QRO.AAQRO...QBBP...DDP...CCP 	 A98 R97 C99 D99 B99 P97 Q98
+C L 3 	 96 ...RO...QRO.AAQRO...QBBP...DDPCC...P 	 A98 R97 C96 D99 B99 P97 Q98
+D L 2 	 97 ...RO...QRO.AAQRO...QBBP.DD..PCC...P 	 A98 R97 C96 D97 B99 P97 Q98
+Q U 1 	 97 ..QRO...QRO.AAQRO....BBP.DD..PCC...P 	 A98 R97 C96 D97 B99 P97 Q97
+B L 2 	 97 ..QRO...QRO.AAQRO..BB..P.DD..PCC...P 	 A98 R97 C96 D97 B97 P97 Q97
+C R 2 	 94 ..QRO...QRO.AAQRO..BB..P.DD..P..CC.P 	 A98 R97 C94 D97 B97 P97 Q97
+O D 3 	 97 ..QR....QR..AAQR...BB.OP.DD.OP..CCOP 	 A98 R97 C94 D97 B97 P97 Q97 O97
+R D 2 	 95 ..Q.....Q...AAQR...BBROP.DDROP..CCOP 	 A98 R95 C94 D97 B97 P97 Q97 O97
+C L 1 	 93 ..Q.....Q...AAQR...BBROP.DDROP.CC.OP 	 A98 R95 C93 D97 B97 P97 Q97 O97
+R D 1 	 94 ..Q.....Q...AAQ....BBROP.DDROP.CCROP 	 A98 R94 C93 D97 B97 P97 Q97 O97
+B L 1 	 96 ..Q.....Q...AAQ...BB.ROP.DDROP.CCROP 	 A98 R94 C93 D97 B96 P97 Q97 O97
+Q D 1 	 96 ........Q...AAQ...BBQROP.DDROP.CCROP 	 A98 R94 C93 D97 B96 P97 Q96 O97
+C L 1 	 92 ........Q...AAQ...BBQROP.DDROPCC.ROP 	 A98 R94 C92 D97 B96 P97 Q96 O97
+D L 1 	 96 ........Q...AAQ...BBQROPDD.ROPCC.ROP 	 A98 R94 C92 D96 B96 P97 Q96 O97
+Q D 2 	 94 ............AA....BBQROPDDQROPCCQROP 	 A98 R94 C92 D96 B96 P97 Q94 O97
+A R 4 	 94 ................AABBQROPDDQROPCCQROP 	 A94 R94 C92 D96 B96 P97 Q94 O97
+
+! A94 R94 C92 D96 B96 P97 Q94 O97
+......
+......
+....AA
+BBQROP
+DDQROP
+CCQROP
+
+--------------------------------------------------------------------------------

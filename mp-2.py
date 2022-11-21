@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 import copy
 import sys
 import time
@@ -9,7 +10,7 @@ from RushHourPuzzleLoader import RushHourPuzzleLoader
 import RushHourPuzzleSolver
 import Heuristics
 
-puzzles = RushHourPuzzleLoader.load_puzzles()
+puzzles = RushHourPuzzleLoader.load_puzzles(False)
 
 solvers = [
     # UCS
@@ -18,12 +19,12 @@ solvers = [
     RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.BlockingVehiclesHeuristic()), 
     RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.BlockedPositionsHeuristic()),
     RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.BlockingVehiclesHeuristic(3)),
-    RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.OpenPositionsHeuristic()),
+    RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.PositionsHeuristic()),
     #A STAR
     RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.BlockingVehiclesHeuristic()),
     RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.BlockedPositionsHeuristic()),
     RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.BlockingVehiclesHeuristic(3)),
-    RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.OpenPositionsHeuristic())]
+    RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.PositionsHeuristic())]
     
 def write_solution_to_file(file_name, initial_puzzle, move_order, search_states, runtime):
     directory = 'Output'
@@ -48,7 +49,7 @@ def write_solution_to_file(file_name, initial_puzzle, move_order, search_states,
     file.write(parkingLot.get_board_display())
     file.write('\n')
     file.write('Car fuel available: ')
-    file.write(' , '.join(car_fuel_available))
+    file.write(', '.join(car_fuel_available))
     file.write('\n')
     file.write('\n')
 
@@ -98,20 +99,33 @@ def get_file_name(algo_class_name, puzzle_number, heuristic_number, is_sol):
         file_name = '{directory}\\{algo}-{file_type}-{puzzle_number}.txt'.format(directory=directory, algo='ucs', file_type=file_type, puzzle_number=puzzle_number)
     elif 'GBFS' in algo_class_name:
         file_name = '{directory}\\{algo}-h{heuristic_number}-{file_type}-{puzzle_number}.txt'.format(directory=directory, algo='gbfs', file_type=file_type, heuristic_number=heuristic_number, puzzle_number=puzzle_number)
-    elif 'ASTAR' in algo_class_name:
+    elif 'A/A*' in algo_class_name:
         file_name = '{directory}\\{algo}-h{heuristic_number}-{file_type}-{puzzle_number}.txt'.format(directory=directory, algo='a-star', file_type=file_type, heuristic_number=heuristic_number, puzzle_number=puzzle_number)
     else: 
         raise 'no algo matches the one given'
     return file_name
 
-heuristic_count = 1
-for s, solver in enumerate(solvers):
+data = []
+columns=['Puzzle Number', 'Algorithm', 'Heuristic', 'Length of the Solution', 'Length of the Search Path', 'Execution Time (in seconds)']
 
-    if solvers[s-1].__class__.__name__ == solvers[s].__class__.__name__:
-        heuristic_count+=1
-    else:
-        heuristic_count = 1
-    for i, parkingLot in enumerate(puzzles):
+heuristic_count = 1
+
+
+for i, parkingLot in enumerate(puzzles):
+    for s, solver in enumerate(solvers):
+
+        if solvers[s-1].__class__.__name__ == solvers[s].__class__.__name__:
+            heuristic_count+=1
+        else:
+            heuristic_count = 1
+
+        algo_name = ''
+        if 'UCS' in solver.__class__.__name__:
+            algo_name = 'UCS'
+        elif 'GBFS' in solver.__class__.__name__:
+            algo_name = 'GBFS'
+        elif 'ASTAR' in solver.__class__.__name__:
+            algo_name = 'A/A*'
 
         print("Solving Puzzle ", i + 1, '\n')
         #parkingLot.print_board()
@@ -120,14 +134,18 @@ for s, solver in enumerate(solvers):
         startTime = time.perf_counter()
         solution, searched_states = solver.solve(parkingLot)
         endTime = time.perf_counter()
+        execution_time = endTime - startTime
+
         #pr.print_stats('cumulative')
 
         move_order = None
-        solution_file = get_file_name(solver.__class__.__name__, i + 1, heuristic_count, True)
-        search_file = get_file_name(solver.__class__.__name__, i + 1, heuristic_count, False)
+        solution_file = get_file_name(algo_name, i + 1, heuristic_count, True)
+        search_file = get_file_name(algo_name, i + 1, heuristic_count, False)
         if not solution:
             print('no solution found')
         else:
+            print('solved \n')
+
             move_order = [solution]
             while solution.previous_state and solution.previous_state.previous_state:
                 move_order.append(solution.previous_state)
@@ -135,6 +153,22 @@ for s, solver in enumerate(solvers):
             
             move_order.reverse()
 
-        write_solution_to_file(solution_file, parkingLot, move_order, searched_states, endTime - startTime)
+        write_solution_to_file(solution_file, parkingLot, move_order, searched_states, execution_time)
         write_to_search_file(search_file, searched_states)
+        data.append([i + 1, algo_name, f'h{heuristic_count}' if algo_name != 'UCS' else 'NA', len(move_order) if move_order else 'NA', len(searched_states), execution_time])
+dataFrame = pd.DataFrame(data=data, columns=columns)
+writer = pd.ExcelWriter("Rush Hour Analysis.xlsx", engine='xlsxwriter')
+dataFrame.to_excel(writer, sheet_name='Sheet1', index=False)
+
+workbook = writer.book
+workheet = writer.sheets['Sheet1']
+
+time_format = workbook.add_format({'num_format': '#,###0.000'})
+
+workheet.set_column(0, 0, 15, None)
+workheet.set_column(3, 3, 20, None)
+workheet.set_column(4, 4, 23, None)
+workheet.set_column(5, 5, 25, None)
+
+writer.save()
 

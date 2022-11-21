@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: B..O..BJJO.CAADO.C..DEEF.HG..F.HG.II 
+
+B..O..
+BJJO.C
+AADO.C
+..DEEF
+.HG..F
+.HG.II
+
+Car fuel available: B:100, O:100, J:100, C:100, A:100, D:100, E:100, F:100, H:100, G:100, I:100
+
+Runtime: 0.12311
+Solution path: I L 1; F D 1; E R 1; O D 2; H U 1; J R 2; D U 2; G U 1; I L 2; O D 1; C U 1; A R 4 
+Search path length: 223 
+Solution path length: 12 
+
+I L 1 	 99 B..O..BJJO.CAADO.C..DEEF.HG..F.HGII. 	 I99
+F D 1 	 99 B..O..BJJO.CAADO.C..DEE..HG..F.HGIIF 	 I99 F99
+E R 1 	 99 B..O..BJJO.CAADO.C..D.EE.HG..F.HGIIF 	 I99 F99 E99
+O D 2 	 98 B.....BJJ..CAADO.C..DOEE.HGO.F.HGIIF 	 I99 F99 E99 O98
+H U 1 	 99 B.....BJJ..CAADO.C.HDOEE.HGO.F..GIIF 	 I99 F99 E99 O98 H99
+J R 2 	 98 B.....B..JJCAADO.C.HDOEE.HGO.F..GIIF 	 I99 F99 E99 O98 H99 J98
+D U 2 	 98 B.D...B.DJJCAA.O.C.H.OEE.HGO.F..GIIF 	 I99 F99 E99 O98 H99 J98 D98
+G U 1 	 99 B.D...B.DJJCAA.O.C.HGOEE.HGO.F...IIF 	 I99 F99 E99 O98 H99 J98 D98 G99
+I L 2 	 97 B.D...B.DJJCAA.O.C.HGOEE.HGO.F.II..F 	 I97 F99 E99 O98 H99 J98 D98 G99
+O D 1 	 97 B.D...B.DJJCAA...C.HGOEE.HGO.F.IIO.F 	 I97 F99 E99 O97 H99 J98 D98 G99
+C U 1 	 99 B.D..CB.DJJCAA.....HGOEE.HGO.F.IIO.F 	 I97 F99 E99 O97 H99 J98 D98 G99 C99
+A R 4 	 96 B.D..CB.DJJC....AA.HGOEE.HGO.F.IIO.F 	 I97 F99 E99 O97 H99 J98 D98 G99 C99 A96
+
+! I97 F99 E99 O97 H99 J98 D98 G99 C99 A96
+B.D..C
+B.DJJC
+....AA
+.HGOEE
+.HGO.F
+.IIO.F
+
+--------------------------------------------------------------------------------

@@ -32,19 +32,37 @@ class BlockedPositionsHeuristic(object):
                 positionCount += 1
         return positionCount
 
-class OpenPositionsHeuristic(object):
+# number of open segments, if segements is 0, return positions between ambulance and exit
+
+#ex:
+#AA.B.. = 4 - 2 = 2
+#AA.CC. =  4 - 2 = 2
+#AABCDE = 4 - 0 = 4
+#AA.B.C = 4 - 2 = 2
+#AABC.. = 4 - 1 = 3
+class PositionsHeuristic(object):
 
     def calculate(self, parkingLot):
-        openPositionsCount = 0
+        open_segments = 0
         ambulance = parkingLot.get_ambulance_vehicle()
         if not ambulance:
             return 0
-        for x in range(0, parkingLot.sizeX):
-            vehicle = parkingLot.grid[ambulance.y][x]
-            if not vehicle:
-                openPositionsCount += 1
-        return parkingLot.sizeX - openPositionsCount
+        x = ambulance.x + ambulance.size
 
+        lastItem = ambulance
+        while x < parkingLot.sizeX:
+            vehicle = parkingLot.grid[ambulance.y][x]
+
+            if lastItem and not vehicle:
+                open_segments += 1
+
+            lastItem = vehicle
+            x += 1
+        
+        if open_segments > 0:
+            return open_segments
+        else:
+            return (parkingLot.sizeX - (ambulance.x + ambulance.size))
 
 
             

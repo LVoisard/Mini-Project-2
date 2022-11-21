@@ -1,0 +1,17 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: OBBP..O..P.........CQQQ..C......RRR. 
+
+OBBP..
+O..P..
+......
+.CQQQ.
+.C....
+..RRR.
+
+Car fuel available: O:100, B:100, P:100, C:100, Q:100, R:100
+
+Sorry, could not solve the puzzle as specified.
+Error: no solution found
+Runtime: 0.89005
+--------------------------------------------------------------------------------

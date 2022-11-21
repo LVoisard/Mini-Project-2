@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------
+
+Initial board configuration: ..O.....O...AAO........P.....PQQQ..P 
+
+..O...
+..O...
+AAO...
+.....P
+.....P
+QQQ..P
+
+Car fuel available: O:100, A:100, P:100, Q:100
+
+Runtime: 0.02853
+Solution path: P U 2; Q R 3; O D 3; A R 3; O U 2; Q L 3; P D 2; A R 1 
+Search path length: 81 
+Solution path length: 8 
+
+P U 2 	 98 ..O.....O..PAAO..P.....P......QQQ... 	 P98
+Q R 3 	 97 ..O.....O..PAAO..P.....P.........QQQ 	 P98 Q97
+O D 3 	 97 ...........PAA...P..O..P..O.....OQQQ 	 P98 Q97 O97
+A R 3 	 97 ...........P...AAP..O..P..O.....OQQQ 	 P98 Q97 O97 A97
+O U 2 	 95 ........O..P..OAAP..O..P.........QQQ 	 P98 Q97 O95 A97
+Q L 3 	 94 ........O..P..OAAP..O..P......QQQ... 	 P98 Q94 O95 A97
+P D 2 	 96 ........O.....OAA...O..P.....PQQQ..P 	 P96 Q94 O95 A97
+A R 1 	 96 ........O.....O.AA..O..P.....PQQQ..P 	 P96 Q94 O95 A96
+
+! P96 Q94 O95 A96
+......
+..O...
+..O.AA
+..O..P
+.....P
+QQQ..P
+
+--------------------------------------------------------------------------------

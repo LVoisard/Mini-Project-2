@@ -1,0 +1,24 @@
+0 0 0 BCCO..B.DO..AADO...PPP..............  
+10 1 9 BCCO..B.DO..AADO....PPP............. P99  
+10 1 9 BCCO..B.DO..AADO.....PPP............ P98  
+10 1 9 BCCO..B.DO..AADO..PPP............... P99  
+11 2 9 BCCO..B..O..AA.O....DPPP..D......... D98 P98  
+9 3 6 BCCO..B..O...AAO....DPPP..D......... A99 D98 P98  
+10 4 6 .CCO..B..O..BAAO....DPPP..D......... B99 A99 D98 P98  
+10 4 6 .CCO.....O..BAAO..B.DPPP..D......... B98 A99 D98 P98  
+10 4 6 .CCO.....O...AAO..B.DPPPB.D......... B97 A99 D98 P98  
+10 4 6 BCCO..B..O...AAO.....PPP..D.....D... D97 A99 D98 P98  
+10 4 6 .CCO.....O...AAO....DPPPB.D...B..... B96 A99 D98 P98  
+11 2 9 BCCO..B..O..AA.O.....PPP..D.....D... D97 P98  
+9 3 6 BCCO..B..O..AA.O....PPP...D.....D... P97 D97 P98  
+9 3 6 BCCO..B..O..AA.O...PPP....D.....D... P96 D97 P98  
+9 3 6 BCCO..B..O..AA.O..PPP.....D.....D... P95 D97 P98  
+10 4 6 BCCO..B..O...AAO....PPP...D.....D... A99 P97 D97 P98  
+10 4 6 BCCO..B..O...AAO...PPP....D.....D... A99 P96 D97 P98  
+10 4 6 BCC...B..O..AA.O..PPPO....D.....D... O99 P95 D97 P98  
+10 4 6 BCC...B.....AA....PPPO....DO....DO.. O97 P95 D97 P98  
+8 5 3 B.CC..B.....AA....PPPO....DO....DO.. C99 O97 P95 D97 P98  
+8 5 3 B..CC.B.....AA....PPPO....DO....DO.. C98 O97 P95 D97 P98  
+8 5 3 B...CCB.....AA....PPPO....DO....DO.. C97 O97 P95 D97 P98  
+8 5 3 BCC...B.......AA..PPPO....DO....DO.. A98 O97 P95 D97 P98  
+8 5 3 BCC...B.........AAPPPO....DO....DO.. A96 O97 P95 D97 P98  
