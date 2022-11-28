@@ -10,7 +10,7 @@ from RushHourPuzzleLoader import RushHourPuzzleLoader
 import RushHourPuzzleSolver
 import Heuristics
 
-puzzles = RushHourPuzzleLoader.load_puzzles(True)
+puzzles = RushHourPuzzleLoader.load_puzzles(False)
 
 solvers = [
     # UCS

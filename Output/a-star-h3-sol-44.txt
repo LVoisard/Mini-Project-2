@@ -11,7 +11,7 @@ AAOCDP
 
 Car fuel available: O:100, B:100, P:100, C:100, D:100, A:100, E:100, F:100, G:100, H:100, I:100, J:100
 
-Runtime: 1.18860
+Runtime: 1.47205 seconds 
 Search path length: 1641 states 
 Solution path length: 14 moves 
 Solution path: G L 1; E L 2; C D 2; I L 2; G L 1; O D 3; B L 3; D U 1; C U 3; F L 1; H L 1; J L 1; P D 3; A R 4 

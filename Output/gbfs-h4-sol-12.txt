@@ -11,7 +11,7 @@ PPPI..
 
 Car fuel available: B:100, C:100, D:100, E:100, O:100, A:100, F:100, G:100, H:100, P:100, I:100, J:100, K:100
 
-Runtime: 0.39682
+Runtime: 0.71261 seconds 
 Search path length: 1006 states 
 Solution path length: 66 moves 
 Solution path: D L 1; O U 1; J L 1; H R 1; I U 3; K L 1; H L 1; K L 1; O D 3; D R 1; K R 1; J R 1; P R 2; I U 1; O U 1; K R 1; J L 1; O U 1; P R 1; F D 1; K L 1; J R 1; A R 1; B D 1; J L 1; F D 1; G R 1; B D 2; A L 1; I D 1; D L 1; O U 1; H R 1; K R 1; C D 1; D L 1; E U 1; D L 2; G R 1; I U 1; E D 1; C U 1; G L 1; H L 1; O D 1; E U 1; A R 2; B U 2; G L 1; F U 1; O U 1; H R 1; A L 1; K L 1; J R 1; H L 1; A R 2; F U 1; H R 1; P L 2; K R 1; H L 1; O D 1; K L 1; O D 2; A R 1 

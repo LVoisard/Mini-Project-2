@@ -11,7 +11,7 @@ CFFG.E
 
 Car fuel available: B:100, O:100, A:100, K:100, C:100, D:100, E:100, F:100, G:100, I:100
 
-Runtime: 0.06099
+Runtime: 0.07149 seconds 
 Search path length: 161 states 
 Solution path length: 25 moves 
 Solution path: E U 3; D R 1; G U 1; I L 3; G D 1; D L 1; C D 1; E D 4; D R 1; B D 2; O R 3; K U 2; A R 1; C U 4; A L 1; F L 1; K D 3; A R 1; C D 2; O L 3; B U 1; D L 1; B U 1; I L 1; A R 3 

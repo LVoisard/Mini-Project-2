@@ -1,17 +1,36 @@
 --------------------------------------------------------------------------------
 
-Initial board configuration: IJBBCCIJDDL.IJAAL.EEK.L...KFF..GGHH. F0 G6 
+Initial board configuration: BB.O.CP..OQCPAAOQHPRRRQHE...FFE...GG 
 
-IJBBCC
-IJDDL.
-IJAAL.
-EEK.L.
-..KFF.
-.GGHH.
+BB.O.C
+P..OQC
+PAAOQH
+PRRRQH
+E...FF
+E...GG
 
-Car fuel available: I:100, J:100, B:100, C:100, D:100, L:100, A:100, E:100, K:100, F:0, G:6, H:100
+Car fuel available: B:100, O:100, C:100, P:100, Q:100, A:100, H:100, R:100, E:100, F:100, G:100
 
-Sorry, could not solve the puzzle as specified.
-Error: no solution found
-Runtime: 0.20201 seconds 
+Runtime: 1.08337 seconds 
+Search path length: 1223 states 
+Solution path length: 9 moves 
+Solution path: G L 3; F L 3; Q D 2; H D 2; B R 1; P U 1; R L 1; O D 3; A R 3 
+
+G L 3 	 97 BB.O.CP..OQCPAAOQHPRRRQHE...FFEGG...
+F L 3 	 97 BB.O.CP..OQCPAAOQHPRRRQHEFF...EGG...
+Q D 2 	 98 BB.O.CP..O.CPAAO.HPRRRQHEFF.Q.EGG.Q.
+H D 2 	 98 BB.O.CP..O.CPAAO..PRRRQ.EFF.QHEGG.QH
+B R 1 	 99 .BBO.CP..O.CPAAO..PRRRQ.EFF.QHEGG.QH
+P U 1 	 99 PBBO.CP..O.CPAAO...RRRQ.EFF.QHEGG.QH
+R L 1 	 99 PBBO.CP..O.CPAAO..RRR.Q.EFF.QHEGG.QH
+O D 3 	 97 PBB..CP....CPAA...RRROQ.EFFOQHEGGOQH
+A R 3 	 97 PBB..CP....CP...AARRROQ.EFFOQHEGGOQH
+
+PBB..C
+P....C
+P...AA
+RRROQ.
+EFFOQH
+EGGOQH
+
 --------------------------------------------------------------------------------

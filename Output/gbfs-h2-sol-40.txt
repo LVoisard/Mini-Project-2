@@ -11,7 +11,7 @@ Initial board configuration: ..OBCC..OB.D..OAAD..PPPE.....E......
 
 Car fuel available: O:100, B:100, C:100, D:100, A:100, P:100, E:100
 
-Runtime: 0.01351
+Runtime: 0.01875 seconds 
 Search path length: 35 states 
 Solution path length: 9 moves 
 Solution path: E D 1; P R 1; O D 3; A L 3; B D 1; C L 4; B U 1; D U 1; A R 4 

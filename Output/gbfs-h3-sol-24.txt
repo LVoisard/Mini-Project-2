@@ -11,7 +11,7 @@ LLJ...
 
 Car fuel available: B:100, C:100, D:100, E:100, F:100, A:100, G:100, H:100, I:100, J:100, K:100, L:100
 
-Runtime: 3.64473
+Runtime: 4.97472 seconds 
 Search path length: 5618 states 
 Solution path length: 41 moves 
 Solution path: K L 1; H D 2; E U 1; F U 1; H U 1; E D 2; D L 1; E U 1; H U 3; E U 1; I L 2; K R 1; J U 1; L R 1; K L 1; H D 4; L R 2; J D 1; I R 2; H U 4; I L 1; E D 1; K R 1; I R 1; F D 2; L R 1; E D 2; A L 1; F D 1; L L 1; A L 1; I L 2; C D 2; D L 3; C U 2; G U 2; K L 1; H D 4; A R 1; I R 1; A R 3 

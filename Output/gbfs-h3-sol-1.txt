@@ -1,29 +1,40 @@
 --------------------------------------------------------------------------------
 
-Initial board configuration: BBIJ....IJCC..IAAMGDDK.MGH.KL.GHFFL. 
+Initial board configuration: BB...OP..Q.OPAAQ.OP..Q..C...DDC.RRR. 
 
-BBIJ..
-..IJCC
-..IAAM
-GDDK.M
-GH.KL.
-GHFFL.
+BB...O
+P..Q.O
+PAAQ.O
+P..Q..
+C...DD
+C.RRR.
 
-Car fuel available: B:100, I:100, J:100, C:100, A:100, M:100, G:100, D:100, K:100, H:100, L:100, F:100
+Car fuel available: B:100, O:100, P:100, Q:100, A:100, C:100, D:100, R:100
 
-Runtime: 0.00099 seconds 
-Search path length: 3 states 
-Solution path length: 2 moves 
-Solution path: M D 1; A R 1 
+Runtime: 0.14282 seconds 
+Search path length: 154 states 
+Solution path length: 13 moves 
+Solution path: D L 1; R L 1; O D 3; B R 3; P U 1; C U 1; D L 1; B L 2; Q U 1; R L 1; D L 1; Q D 3; A R 3 
 
-M D 1 	 99 BBIJ....IJCC..IAA.GDDK.MGH.KLMGHFFL.
-A R 1 	 99 BBIJ....IJCC..I.AAGDDK.MGH.KLMGHFFL.
+D L 1 	 99 BB...OP..Q.OPAAQ.OP..Q..C..DD.C.RRR.
+R L 1 	 99 BB...OP..Q.OPAAQ.OP..Q..C..DD.CRRR..
+O D 3 	 97 BB....P..Q..PAAQ..P..Q.OC..DDOCRRR.O
+B R 3 	 97 ...BB.P..Q..PAAQ..P..Q.OC..DDOCRRR.O
+P U 1 	 99 P..BB.P..Q..PAAQ.....Q.OC..DDOCRRR.O
+C U 1 	 99 P..BB.P..Q..PAAQ..C..Q.OC..DDO.RRR.O
+D L 1 	 98 P..BB.P..Q..PAAQ..C..Q.OC.DD.O.RRR.O
+B L 2 	 95 PBB...P..Q..PAAQ..C..Q.OC.DD.O.RRR.O
+Q U 1 	 99 PBBQ..P..Q..PAAQ..C....OC.DD.O.RRR.O
+R L 1 	 98 PBBQ..P..Q..PAAQ..C....OC.DD.ORRR..O
+D L 1 	 97 PBBQ..P..Q..PAAQ..C....OCDD..ORRR..O
+Q D 3 	 96 PBB...P.....PAA...C..Q.OCDDQ.ORRRQ.O
+A R 3 	 97 PBB...P.....P...AAC..Q.OCDDQ.ORRRQ.O
 
-BBIJ..
-..IJCC
-..I.AA
-GDDK.M
-GH.KLM
-GHFFL.
+PBB...
+P.....
+P...AA
+C..Q.O
+CDDQ.O
+RRRQ.O
 
 --------------------------------------------------------------------------------

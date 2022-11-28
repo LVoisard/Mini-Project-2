@@ -11,7 +11,7 @@ AA.BCP
 
 Car fuel available: O:100, B:100, C:100, P:100, A:100, Q:100, D:100, E:100, R:100
 
-Runtime: 3.01084
+Runtime: 3.67534 seconds 
 Search path length: 5413 states 
 Solution path length: 8 moves 
 Solution path: O L 3; C U 1; B U 1; A R 3; Q U 2; R L 3; P D 2; A R 1 

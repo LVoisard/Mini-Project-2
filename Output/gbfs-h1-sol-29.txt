@@ -11,7 +11,7 @@ Initial board configuration: ...DDO.....O...AAO...PGG...P.....P..
 
 Car fuel available: D:100, O:100, A:100, P:100, G:100
 
-Runtime: 0.01468
+Runtime: 0.02040 seconds 
 Search path length: 42 states 
 Solution path length: 7 moves 
 Solution path: D L 3; A L 3; P U 3; G L 3; P D 3; O D 3; A R 4 
