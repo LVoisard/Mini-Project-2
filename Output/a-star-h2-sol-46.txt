@@ -11,26 +11,25 @@ QQQG..
 
 Car fuel available: O:100, P:100, A:100, B:100, D:100, Q:100, G:100
 
-Runtime: 0.07136
+Runtime: 0.08584
+Search path length: 215 states 
+Solution path length: 13 moves 
 Solution path: P L 1; D R 1; G U 4; Q R 3; B D 2; D L 4; B U 2; Q L 3; O D 3; G D 3; P R 3; B U 2; A R 4 
-Search path length: 215 
-Solution path length: 13 
 
-P L 1 	 99 ....O.PPP.O.AAB.O...BDD.QQQG.....G.. 	 P99
-D R 1 	 99 ....O.PPP.O.AAB.O...B.DDQQQG.....G.. 	 P99 D99
-G U 4 	 96 ...GO.PPPGO.AAB.O...B.DDQQQ......... 	 P99 D99 G96
-Q R 3 	 97 ...GO.PPPGO.AAB.O...B.DD...QQQ...... 	 P99 D99 G96 Q97
-B D 2 	 98 ...GO.PPPGO.AA..O.....DD..BQQQ..B... 	 P99 D99 G96 Q97 B98
-D L 4 	 95 ...GO.PPPGO.AA..O.DD......BQQQ..B... 	 P99 D95 G96 Q97 B98
-B U 2 	 96 ...GO.PPPGO.AAB.O.DDB......QQQ...... 	 P99 D95 G96 Q97 B96
-Q L 3 	 94 ...GO.PPPGO.AAB.O.DDB...QQQ......... 	 P99 D95 G96 Q94 B96
-O D 3 	 97 ...G..PPPG..AAB...DDB.O.QQQ.O.....O. 	 P99 D95 G96 Q94 B96 O97
-G D 3 	 93 ......PPP...AAB...DDBGO.QQQGO.....O. 	 P99 D95 G93 Q94 B96 O97
-P R 3 	 96 .........PPPAAB...DDBGO.QQQGO.....O. 	 P96 D95 G93 Q94 B96 O97
-B U 2 	 94 ..B.....BPPPAA....DD.GO.QQQGO.....O. 	 P96 D95 G93 Q94 B94 O97
-A R 4 	 96 ..B.....BPPP....AADD.GO.QQQGO.....O. 	 P96 D95 G93 Q94 B94 O97 A96
+P L 1 	 99 ....O.PPP.O.AAB.O...BDD.QQQG.....G..
+D R 1 	 99 ....O.PPP.O.AAB.O...B.DDQQQG.....G..
+G U 4 	 96 ...GO.PPPGO.AAB.O...B.DDQQQ.........
+Q R 3 	 97 ...GO.PPPGO.AAB.O...B.DD...QQQ......
+B D 2 	 98 ...GO.PPPGO.AA..O.....DD..BQQQ..B...
+D L 4 	 95 ...GO.PPPGO.AA..O.DD......BQQQ..B...
+B U 2 	 96 ...GO.PPPGO.AAB.O.DDB......QQQ......
+Q L 3 	 94 ...GO.PPPGO.AAB.O.DDB...QQQ.........
+O D 3 	 97 ...G..PPPG..AAB...DDB.O.QQQ.O.....O.
+G D 3 	 93 ......PPP...AAB...DDBGO.QQQGO.....O.
+P R 3 	 96 .........PPPAAB...DDBGO.QQQGO.....O.
+B U 2 	 94 ..B.....BPPPAA....DD.GO.QQQGO.....O.
+A R 4 	 96 ..B.....BPPP....AADD.GO.QQQGO.....O.
 
-! P96 D95 G93 Q94 B94 O97 A96
 ..B...
 ..BPPP
 ....AA

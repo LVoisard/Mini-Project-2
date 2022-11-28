@@ -11,27 +11,26 @@ QQQDFP
 
 Car fuel available: A:100, O:100, B:100, C:100, P:100, D:100, F:100, Q:100
 
-Runtime: 0.38898
+Runtime: 0.36861
+Search path length: 890 states 
+Solution path length: 14 moves 
 Solution path: P U 3; O U 2; C L 1; F U 4; C R 2; D U 4; Q R 3; O D 3; A R 3; O U 3; C L 1; Q L 2; P D 3; A R 1 
-Search path length: 890 
-Solution path length: 14 
 
-P U 3 	 97 .....P.....PAAO..PBBOCC...ODF.QQQDF. 	 P97
-O U 2 	 98 ..O..P..O..PAAO..PBB.CC....DF.QQQDF. 	 P97 O98
-C L 1 	 99 ..O..P..O..PAAO..PBBCC.....DF.QQQDF. 	 P97 O98 C99
-F U 4 	 96 ..O.FP..O.FPAAO..PBBCC.....D..QQQD.. 	 P97 O98 C99 F96
-C R 2 	 97 ..O.FP..O.FPAAO..PBB..CC...D..QQQD.. 	 P97 O98 C97 F96
-D U 4 	 96 ..ODFP..ODFPAAO..PBB..CC......QQQ... 	 P97 O98 C97 F96 D96
-Q R 3 	 97 ..ODFP..ODFPAAO..PBB..CC.........QQQ 	 P97 O98 C97 F96 D96 Q97
-O D 3 	 95 ...DFP...DFPAA...PBBO.CC..O.....OQQQ 	 P97 O95 C97 F96 D96 Q97
-A R 3 	 97 ...DFP...DFP...AAPBBO.CC..O.....OQQQ 	 P97 O95 C97 F96 D96 Q97 A97
-O U 3 	 92 ..ODFP..ODFP..OAAPBB..CC.........QQQ 	 P97 O92 C97 F96 D96 Q97 A97
-C L 1 	 96 ..ODFP..ODFP..OAAPBB.CC..........QQQ 	 P97 O92 C96 F96 D96 Q97 A97
-Q L 2 	 95 ..ODFP..ODFP..OAAPBB.CC........QQQ.. 	 P97 O92 C96 F96 D96 Q95 A97
-P D 3 	 94 ..ODF...ODF...OAA.BB.CCP.....P.QQQ.P 	 P94 O92 C96 F96 D96 Q95 A97
-A R 1 	 96 ..ODF...ODF...O.AABB.CCP.....P.QQQ.P 	 P94 O92 C96 F96 D96 Q95 A96
+P U 3 	 97 .....P.....PAAO..PBBOCC...ODF.QQQDF.
+O U 2 	 98 ..O..P..O..PAAO..PBB.CC....DF.QQQDF.
+C L 1 	 99 ..O..P..O..PAAO..PBBCC.....DF.QQQDF.
+F U 4 	 96 ..O.FP..O.FPAAO..PBBCC.....D..QQQD..
+C R 2 	 97 ..O.FP..O.FPAAO..PBB..CC...D..QQQD..
+D U 4 	 96 ..ODFP..ODFPAAO..PBB..CC......QQQ...
+Q R 3 	 97 ..ODFP..ODFPAAO..PBB..CC.........QQQ
+O D 3 	 95 ...DFP...DFPAA...PBBO.CC..O.....OQQQ
+A R 3 	 97 ...DFP...DFP...AAPBBO.CC..O.....OQQQ
+O U 3 	 92 ..ODFP..ODFP..OAAPBB..CC.........QQQ
+C L 1 	 96 ..ODFP..ODFP..OAAPBB.CC..........QQQ
+Q L 2 	 95 ..ODFP..ODFP..OAAPBB.CC........QQQ..
+P D 3 	 94 ..ODF...ODF...OAA.BB.CCP.....P.QQQ.P
+A R 1 	 96 ..ODF...ODF...O.AABB.CCP.....P.QQQ.P
 
-! P94 O92 C96 F96 D96 Q95 A96
 ..ODF.
 ..ODF.
 ..O.AA

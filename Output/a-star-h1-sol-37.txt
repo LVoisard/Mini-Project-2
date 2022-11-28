@@ -11,21 +11,20 @@ AA.BCP
 
 Car fuel available: O:100, B:100, C:100, P:100, A:100, Q:100, D:100, E:100, R:100
 
-Runtime: 0.41220
+Runtime: 0.41397
+Search path length: 681 states 
+Solution path length: 8 moves 
 Solution path: O L 3; C U 1; B U 1; A R 3; Q U 1; R L 3; P D 2; A R 1 
-Search path length: 681 
-Solution path length: 8 
 
-O L 3 	 97 OOO......BCPAA.BCP..QDDP..QEE...QRRR 	 O97
-C U 1 	 99 OOO.C....BCPAA.B.P..QDDP..QEE...QRRR 	 O97 C99
-B U 1 	 99 OOOBC....BCPAA...P..QDDP..QEE...QRRR 	 O97 C99 B99
-A R 3 	 97 OOOBC....BCP...AAP..QDDP..QEE...QRRR 	 O97 C99 B99 A97
-Q U 1 	 99 OOOBC....BCP..QAAP..QDDP..QEE....RRR 	 O97 C99 B99 A97 Q99
-R L 3 	 97 OOOBC....BCP..QAAP..QDDP..QEE.RRR... 	 O97 C99 B99 A97 Q99 R97
-P D 2 	 98 OOOBC....BC...QAA...QDDP..QEEPRRR..P 	 O97 C99 B99 A97 Q99 R97 P98
-A R 1 	 96 OOOBC....BC...Q.AA..QDDP..QEEPRRR..P 	 O97 C99 B99 A96 Q99 R97 P98
+O L 3 	 97 OOO......BCPAA.BCP..QDDP..QEE...QRRR
+C U 1 	 99 OOO.C....BCPAA.B.P..QDDP..QEE...QRRR
+B U 1 	 99 OOOBC....BCPAA...P..QDDP..QEE...QRRR
+A R 3 	 97 OOOBC....BCP...AAP..QDDP..QEE...QRRR
+Q U 1 	 99 OOOBC....BCP..QAAP..QDDP..QEE....RRR
+R L 3 	 97 OOOBC....BCP..QAAP..QDDP..QEE.RRR...
+P D 2 	 98 OOOBC....BC...QAA...QDDP..QEEPRRR..P
+A R 1 	 96 OOOBC....BC...Q.AA..QDDP..QEEPRRR..P
 
-! O97 C99 B99 A96 Q99 R97 P98
 OOOBC.
 ...BC.
 ..Q.AA

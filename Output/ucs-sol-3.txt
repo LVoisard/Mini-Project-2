@@ -1,42 +1,44 @@
 --------------------------------------------------------------------------------
 
-Initial board configuration: .............AAO...BBO.P.C.O.P.CDD.P 
+Initial board configuration: JBBCCCJDD..MJAAL.MFFKL.N..KGGN.HH... 
 
-......
-......
-.AAO..
-.BBO.P
-.C.O.P
-.CDD.P
+JBBCCC
+JDD..M
+JAAL.M
+FFKL.N
+..KGGN
+.HH...
 
-Car fuel available: A:100, O:100, B:100, P:100, C:100, D:100
+Car fuel available: J:100, B:100, C:100, D:100, M:100, A:100, L:100, F:100, K:100, N:100, G:100, H:100
 
-Runtime: 0.33397
-Solution path: P U 3; D R 2; O U 2; B R 3; O D 3; A R 1; C U 4; A L 2; O U 3; D L 3; B L 3; P D 3; O D 3; A R 4 
-Search path length: 774 
-Solution path length: 14 
+Runtime: 4.87504 seconds 
+Search path length: 5400 states 
+Solution path length: 17 moves 
+Solution path: L U 1; H R 3; K D 1; F R 3; J D 3; B L 1; A L 1; D L 1; K U 4; F L 2; G L 2; L D 2; A R 3; K D 1; C L 1; M U 1; A R 1 
 
-P U 3 	 97 .....P.....P.AAO.P.BBO...C.O...CDD.. 	 P97
-D R 2 	 98 .....P.....P.AAO.P.BBO...C.O...C..DD 	 P97 D98
-O U 2 	 98 ...O.P...O.P.AAO.P.BB....C.....C..DD 	 P97 D98 O98
-B R 3 	 97 ...O.P...O.P.AAO.P....BB.C.....C..DD 	 P97 D98 O98 B97
-O D 3 	 95 .....P.....P.AA..P...OBB.C.O...C.ODD 	 P97 D98 O95 B97
-A R 1 	 99 .....P.....P..AA.P...OBB.C.O...C.ODD 	 P97 D98 O95 B97 A99
-C U 4 	 96 .C...P.C...P..AA.P...OBB...O.....ODD 	 P97 D98 O95 B97 A99 C96
-A L 2 	 97 .C...P.C...PAA...P...OBB...O.....ODD 	 P97 D98 O95 B97 A97 C96
-O U 3 	 92 .C.O.P.C.O.PAA.O.P....BB..........DD 	 P97 D98 O92 B97 A97 C96
-D L 3 	 95 .C.O.P.C.O.PAA.O.P....BB.......DD... 	 P97 D95 O92 B97 A97 C96
-B L 3 	 94 .C.O.P.C.O.PAA.O.P.BB..........DD... 	 P97 D95 O92 B94 A97 C96
-P D 3 	 94 .C.O...C.O..AA.O...BB..P.....P.DD..P 	 P94 D95 O92 B94 A97 C96
-O D 3 	 89 .C.....C....AA.....BBO.P...O.P.DDO.P 	 P94 D95 O89 B94 A97 C96
-A R 4 	 93 .C.....C........AA.BBO.P...O.P.DDO.P 	 P94 D95 O89 B94 A93 C96
+L U 1 	 99 JBBCCCJDDL.MJAAL.MFFK..N..KGGN.HH...
+H R 3 	 97 JBBCCCJDDL.MJAAL.MFFK..N..KGGN....HH
+K D 1 	 99 JBBCCCJDDL.MJAAL.MFF...N..KGGN..K.HH
+F R 3 	 97 JBBCCCJDDL.MJAAL.M...FFN..KGGN..K.HH
+J D 3 	 97 .BBCCC.DDL.M.AAL.MJ..FFNJ.KGGNJ.K.HH
+B L 1 	 99 BB.CCC.DDL.M.AAL.MJ..FFNJ.KGGNJ.K.HH
+A L 1 	 99 BB.CCC.DDL.MAA.L.MJ..FFNJ.KGGNJ.K.HH
+D L 1 	 99 BB.CCCDD.L.MAA.L.MJ..FFNJ.KGGNJ.K.HH
+K U 4 	 95 BBKCCCDDKL.MAA.L.MJ..FFNJ..GGNJ...HH
+F L 2 	 95 BBKCCCDDKL.MAA.L.MJFF..NJ..GGNJ...HH
+G L 2 	 98 BBKCCCDDKL.MAA.L.MJFF..NJGG..NJ...HH
+L D 2 	 97 BBKCCCDDK..MAA...MJFFL.NJGGL.NJ...HH
+A R 3 	 96 BBKCCCDDK..M...AAMJFFL.NJGGL.NJ...HH
+K D 1 	 94 BB.CCCDDK..M..KAAMJFFL.NJGGL.NJ...HH
+C L 1 	 99 BBCCC.DDK..M..KAAMJFFL.NJGGL.NJ...HH
+M U 1 	 99 BBCCCMDDK..M..KAA.JFFL.NJGGL.NJ...HH
+A R 1 	 95 BBCCCMDDK..M..K.AAJFFL.NJGGL.NJ...HH
 
-! P94 D95 O89 B94 A93 C96
-.C....
-.C....
-....AA
-.BBO.P
-...O.P
-.DDO.P
+BBCCCM
+DDK..M
+..K.AA
+JFFL.N
+JGGL.N
+J...HH
 
 --------------------------------------------------------------------------------

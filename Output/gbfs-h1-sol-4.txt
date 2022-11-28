@@ -1,39 +1,17 @@
 --------------------------------------------------------------------------------
 
-Initial board configuration: O..P..O..P..OAAP....BQQQ..B..C..RRRC 
+Initial board configuration: BBB..MCCDD.MAAKL.MJ.KLEEJ.GG..JHHHII B4 J0 
 
-O..P..
-O..P..
-OAAP..
-..BQQQ
-..B..C
-..RRRC
+BBB..M
+CCDD.M
+AAKL.M
+J.KLEE
+J.GG..
+JHHHII
 
-Car fuel available: O:100, P:100, A:100, B:100, Q:100, C:100, R:100
+Car fuel available: B:4, M:100, C:100, D:100, A:100, K:100, L:100, J:0, E:100, G:100, H:100, I:100
 
-Runtime: 0.07710
-Solution path: O D 3; A L 1; B U 3; A R 1; O U 1; R L 2; O U 2; Q L 3; C U 4; P D 3; A R 3 
-Search path length: 219 
-Solution path length: 11 
-
-O D 3 	 97 ...P.....P...AAP..O.BQQQO.B..CO.RRRC 	 O97
-A L 1 	 99 ...P.....P..AA.P..O.BQQQO.B..CO.RRRC 	 O97 A99
-B U 3 	 97 ..BP....BP..AA.P..O..QQQO....CO.RRRC 	 O97 A99 B97
-A R 1 	 98 ..BP....BP...AAP..O..QQQO....CO.RRRC 	 O97 A98 B97
-O U 1 	 96 ..BP....BP..OAAP..O..QQQO....C..RRRC 	 O96 A98 B97
-R L 2 	 98 ..BP....BP..OAAP..O..QQQO....CRRR..C 	 O96 A98 B97 R98
-O U 2 	 94 O.BP..O.BP..OAAP.....QQQ.....CRRR..C 	 O94 A98 B97 R98
-Q L 3 	 97 O.BP..O.BP..OAAP..QQQ........CRRR..C 	 O94 A98 B97 R98 Q97
-C U 4 	 96 O.BP.CO.BP.COAAP..QQQ.........RRR... 	 O94 A98 B97 R98 Q97 C96
-P D 3 	 97 O.B..CO.B..COAA...QQQP.....P..RRRP.. 	 O94 A98 B97 R98 Q97 C96 P97
-A R 3 	 95 O.B..CO.B..CO...AAQQQP.....P..RRRP.. 	 O94 A95 B97 R98 Q97 C96 P97
-
-! O94 A95 B97 R98 Q97 C96 P97
-O.B..C
-O.B..C
-O...AA
-QQQP..
-...P..
-RRRP..
-
+Sorry, could not solve the puzzle as specified.
+Error: no solution found
+Runtime: 0.08189 seconds 
 --------------------------------------------------------------------------------
