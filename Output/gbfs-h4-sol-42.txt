@@ -11,36 +11,35 @@ AAO...
 
 Car fuel available: B:100, K:100, I:100, A:100, O:100, P:100, D:100, Q:100
 
-Runtime: 0.07684
+Runtime: 0.29292 seconds 
+Search path length: 177 states 
+Solution path length: 23 moves 
 Solution path: I D 1; Q L 2; K R 3; Q R 1; O U 2; P L 3; Q L 1; P R 2; D U 3; Q R 3; K L 1; Q L 2; D D 2; Q L 1; D U 3; P R 1; O D 2; Q R 1; K L 2; Q R 2; I U 1; O D 1; A R 4 
-Search path length: 177 
-Solution path length: 23 
 
-I D 1 	 99 BKK...B..I..AAOI....OPPP..O..D..QQQD 	 I99
-Q L 2 	 98 BKK...B..I..AAOI....OPPP..O..DQQQ..D 	 I99 Q98
-K R 3 	 97 B...KKB..I..AAOI....OPPP..O..DQQQ..D 	 I99 Q98 K97
-Q R 1 	 97 B...KKB..I..AAOI....OPPP..O..D.QQQ.D 	 I99 Q97 K97
-O U 2 	 98 B.O.KKB.OI..AAOI.....PPP.....D.QQQ.D 	 I99 Q97 K97 O98
-P L 3 	 97 B.O.KKB.OI..AAOI..PPP........D.QQQ.D 	 I99 Q97 K97 O98 P97
-Q L 1 	 96 B.O.KKB.OI..AAOI..PPP........DQQQ..D 	 I99 Q96 K97 O98 P97
-P R 2 	 95 B.O.KKB.OI..AAOI....PPP......DQQQ..D 	 I99 Q96 K97 O98 P95
-D U 3 	 97 B.O.KKB.OI.DAAOI.D..PPP.......QQQ... 	 I99 Q96 K97 O98 P95 D97
-Q R 3 	 93 B.O.KKB.OI.DAAOI.D..PPP..........QQQ 	 I99 Q93 K97 O98 P95 D97
-K L 1 	 96 B.OKK.B.OI.DAAOI.D..PPP..........QQQ 	 I99 Q93 K96 O98 P95 D97
-Q L 2 	 91 B.OKK.B.OI.DAAOI.D..PPP........QQQ.. 	 I99 Q91 K96 O98 P95 D97
-D D 2 	 95 B.OKK.B.OI..AAOI....PPPD.....D.QQQ.. 	 I99 Q91 K96 O98 P95 D95
-Q L 1 	 90 B.OKK.B.OI..AAOI....PPPD.....DQQQ... 	 I99 Q90 K96 O98 P95 D95
-D U 3 	 92 B.OKKDB.OI.DAAOI....PPP.......QQQ... 	 I99 Q90 K96 O98 P95 D92
-P R 1 	 94 B.OKKDB.OI.DAAOI.....PPP......QQQ... 	 I99 Q90 K96 O98 P94 D92
-O D 2 	 96 B..KKDB..I.DAAOI....OPPP..O...QQQ... 	 I99 Q90 K96 O96 P94 D92
-Q R 1 	 89 B..KKDB..I.DAAOI....OPPP..O....QQQ.. 	 I99 Q89 K96 O96 P94 D92
-K L 2 	 94 BKK..DB..I.DAAOI....OPPP..O....QQQ.. 	 I99 Q89 K94 O96 P94 D92
-Q R 2 	 87 BKK..DB..I.DAAOI....OPPP..O......QQQ 	 I99 Q87 K94 O96 P94 D92
-I U 1 	 98 BKKI.DB..I.DAAO.....OPPP..O......QQQ 	 I98 Q87 K94 O96 P94 D92
-O D 1 	 95 BKKI.DB..I.DAA......OPPP..O.....OQQQ 	 I98 Q87 K94 O95 P94 D92
-A R 4 	 96 BKKI.DB..I.D....AA..OPPP..O.....OQQQ 	 I98 Q87 K94 O95 P94 D92 A96
+I D 1 	 99 BKK...B..I..AAOI....OPPP..O..D..QQQD
+Q L 2 	 98 BKK...B..I..AAOI....OPPP..O..DQQQ..D
+K R 3 	 97 B...KKB..I..AAOI....OPPP..O..DQQQ..D
+Q R 1 	 97 B...KKB..I..AAOI....OPPP..O..D.QQQ.D
+O U 2 	 98 B.O.KKB.OI..AAOI.....PPP.....D.QQQ.D
+P L 3 	 97 B.O.KKB.OI..AAOI..PPP........D.QQQ.D
+Q L 1 	 96 B.O.KKB.OI..AAOI..PPP........DQQQ..D
+P R 2 	 95 B.O.KKB.OI..AAOI....PPP......DQQQ..D
+D U 3 	 97 B.O.KKB.OI.DAAOI.D..PPP.......QQQ...
+Q R 3 	 93 B.O.KKB.OI.DAAOI.D..PPP..........QQQ
+K L 1 	 96 B.OKK.B.OI.DAAOI.D..PPP..........QQQ
+Q L 2 	 91 B.OKK.B.OI.DAAOI.D..PPP........QQQ..
+D D 2 	 95 B.OKK.B.OI..AAOI....PPPD.....D.QQQ..
+Q L 1 	 90 B.OKK.B.OI..AAOI....PPPD.....DQQQ...
+D U 3 	 92 B.OKKDB.OI.DAAOI....PPP.......QQQ...
+P R 1 	 94 B.OKKDB.OI.DAAOI.....PPP......QQQ...
+O D 2 	 96 B..KKDB..I.DAAOI....OPPP..O...QQQ...
+Q R 1 	 89 B..KKDB..I.DAAOI....OPPP..O....QQQ..
+K L 2 	 94 BKK..DB..I.DAAOI....OPPP..O....QQQ..
+Q R 2 	 87 BKK..DB..I.DAAOI....OPPP..O......QQQ
+I U 1 	 98 BKKI.DB..I.DAAO.....OPPP..O......QQQ
+O D 1 	 95 BKKI.DB..I.DAA......OPPP..O.....OQQQ
+A R 4 	 96 BKKI.DB..I.D....AA..OPPP..O.....OQQQ
 
-! I98 Q87 K94 O95 P94 D92 A96
 BKKI.D
 B..I.D
 ....AA

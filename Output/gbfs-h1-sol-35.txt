@@ -11,28 +11,27 @@ Q....D
 
 Car fuel available: O:100, P:100, B:100, A:100, Q:100, G:100, C:100, D:100
 
-Runtime: 0.09828
+Runtime: 0.07314 seconds 
+Search path length: 138 states 
+Solution path length: 15 moves 
 Solution path: P D 1; O R 2; D U 1; O R 1; B U 1; A R 1; D U 2; C R 1; P D 2; A R 2; B D 2; D D 1; O L 2; D U 2; A R 1 
-Search path length: 138 
-Solution path length: 15 
 
-P D 1 	 99 OOO.....BP..AABP..Q..P..QGGCCDQ....D 	 P99
-O R 2 	 98 ..OOO...BP..AABP..Q..P..QGGCCDQ....D 	 P99 O98
-D U 1 	 99 ..OOO...BP..AABP..Q..P.DQGGCCDQ..... 	 P99 O98 D99
-O R 1 	 97 ...OOO..BP..AABP..Q..P.DQGGCCDQ..... 	 P99 O97 D99
-B U 1 	 99 ..BOOO..BP..AA.P..Q..P.DQGGCCDQ..... 	 P99 O97 D99 B99
-A R 1 	 99 ..BOOO..BP...AAP..Q..P.DQGGCCDQ..... 	 P99 O97 D99 B99 A99
-D U 2 	 97 ..BOOO..BP.D.AAP.DQ..P..QGGCC.Q..... 	 P99 O97 D97 B99 A99
-C R 1 	 99 ..BOOO..BP.D.AAP.DQ..P..QGG.CCQ..... 	 P99 O97 D97 B99 A99 C99
-P D 2 	 97 ..BOOO..B..D.AA..DQ..P..QGGPCCQ..P.. 	 P97 O97 D97 B99 A99 C99
-A R 2 	 97 ..BOOO..B..D...AADQ..P..QGGPCCQ..P.. 	 P97 O97 D97 B99 A97 C99
-B D 2 	 97 ...OOO.....D..BAADQ.BP..QGGPCCQ..P.. 	 P97 O97 D97 B97 A97 C99
-D D 1 	 96 ...OOO........BAADQ.BP.DQGGPCCQ..P.. 	 P97 O97 D96 B97 A97 C99
-O L 2 	 95 .OOO..........BAADQ.BP.DQGGPCCQ..P.. 	 P97 O95 D96 B97 A97 C99
-D U 2 	 94 .OOO.D.....D..BAA.Q.BP..QGGPCCQ..P.. 	 P97 O95 D94 B97 A97 C99
-A R 1 	 96 .OOO.D.....D..B.AAQ.BP..QGGPCCQ..P.. 	 P97 O95 D94 B97 A96 C99
+P D 1 	 99 OOO.....BP..AABP..Q..P..QGGCCDQ....D
+O R 2 	 98 ..OOO...BP..AABP..Q..P..QGGCCDQ....D
+D U 1 	 99 ..OOO...BP..AABP..Q..P.DQGGCCDQ.....
+O R 1 	 97 ...OOO..BP..AABP..Q..P.DQGGCCDQ.....
+B U 1 	 99 ..BOOO..BP..AA.P..Q..P.DQGGCCDQ.....
+A R 1 	 99 ..BOOO..BP...AAP..Q..P.DQGGCCDQ.....
+D U 2 	 97 ..BOOO..BP.D.AAP.DQ..P..QGGCC.Q.....
+C R 1 	 99 ..BOOO..BP.D.AAP.DQ..P..QGG.CCQ.....
+P D 2 	 97 ..BOOO..B..D.AA..DQ..P..QGGPCCQ..P..
+A R 2 	 97 ..BOOO..B..D...AADQ..P..QGGPCCQ..P..
+B D 2 	 97 ...OOO.....D..BAADQ.BP..QGGPCCQ..P..
+D D 1 	 96 ...OOO........BAADQ.BP.DQGGPCCQ..P..
+O L 2 	 95 .OOO..........BAADQ.BP.DQGGPCCQ..P..
+D U 2 	 94 .OOO.D.....D..BAA.Q.BP..QGGPCCQ..P..
+A R 1 	 96 .OOO.D.....D..B.AAQ.BP..QGGPCCQ..P..
 
-! P97 O95 D94 B97 A96 C99
 .OOO.D
 .....D
 ..B.AA

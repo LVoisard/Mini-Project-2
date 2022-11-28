@@ -11,26 +11,25 @@ Initial board configuration: .BCCDE.B.FDE.AAF.G..HH.G...I.....I..
 
 Car fuel available: B:100, C:100, D:100, E:100, F:100, A:100, G:100, H:100, I:100
 
-Runtime: 1.50602
+Runtime: 1.83994 seconds 
+Search path length: 2564 states 
+Solution path length: 13 moves 
 Solution path: G D 2; D D 4; E D 1; C R 2; F U 1; A R 2; B D 4; A L 3; F D 1; C L 4; E U 1; F U 1; A R 4 
-Search path length: 2564 
-Solution path length: 13 
 
-G D 2 	 98 .BCCDE.B.FDE.AAF....HH.....I.G...I.G 	 G98
-D D 4 	 96 .BCC.E.B.F.E.AAF....HH.....IDG...IDG 	 G98 D96
-E D 1 	 99 .BCC...B.F.E.AAF.E..HH.....IDG...IDG 	 G98 D96 E99
-C R 2 	 98 .B..CC.B.F.E.AAF.E..HH.....IDG...IDG 	 G98 D96 E99 C98
-F U 1 	 99 .B.FCC.B.F.E.AA..E..HH.....IDG...IDG 	 G98 D96 E99 C98 F99
-A R 2 	 98 .B.FCC.B.F.E...AAE..HH.....IDG...IDG 	 G98 D96 E99 C98 F99 A98
-B D 4 	 96 ...FCC...F.E...AAE..HH...B.IDG.B.IDG 	 G98 D96 E99 C98 F99 A98 B96
-A L 3 	 95 ...FCC...F.EAA...E..HH...B.IDG.B.IDG 	 G98 D96 E99 C98 F99 A95 B96
-F D 1 	 98 ....CC...F.EAA.F.E..HH...B.IDG.B.IDG 	 G98 D96 E99 C98 F98 A95 B96
-C L 4 	 94 CC.......F.EAA.F.E..HH...B.IDG.B.IDG 	 G98 D96 E99 C94 F98 A95 B96
-E U 1 	 98 CC...E...F.EAA.F....HH...B.IDG.B.IDG 	 G98 D96 E98 C94 F98 A95 B96
-F U 1 	 97 CC.F.E...F.EAA......HH...B.IDG.B.IDG 	 G98 D96 E98 C94 F97 A95 B96
-A R 4 	 91 CC.F.E...F.E....AA..HH...B.IDG.B.IDG 	 G98 D96 E98 C94 F97 A91 B96
+G D 2 	 98 .BCCDE.B.FDE.AAF....HH.....I.G...I.G
+D D 4 	 96 .BCC.E.B.F.E.AAF....HH.....IDG...IDG
+E D 1 	 99 .BCC...B.F.E.AAF.E..HH.....IDG...IDG
+C R 2 	 98 .B..CC.B.F.E.AAF.E..HH.....IDG...IDG
+F U 1 	 99 .B.FCC.B.F.E.AA..E..HH.....IDG...IDG
+A R 2 	 98 .B.FCC.B.F.E...AAE..HH.....IDG...IDG
+B D 4 	 96 ...FCC...F.E...AAE..HH...B.IDG.B.IDG
+A L 3 	 95 ...FCC...F.EAA...E..HH...B.IDG.B.IDG
+F D 1 	 98 ....CC...F.EAA.F.E..HH...B.IDG.B.IDG
+C L 4 	 94 CC.......F.EAA.F.E..HH...B.IDG.B.IDG
+E U 1 	 98 CC...E...F.EAA.F....HH...B.IDG.B.IDG
+F U 1 	 97 CC.F.E...F.EAA......HH...B.IDG.B.IDG
+A R 4 	 91 CC.F.E...F.E....AA..HH...B.IDG.B.IDG
 
-! G98 D96 E98 C94 F97 A91 B96
 CC.F.E
 ...F.E
 ....AA

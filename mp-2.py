@@ -44,8 +44,6 @@ def write_solution_to_file(file_name, initial_puzzle, move_order, search_states,
     file.write('\n')
     file.write('Initial board configuration: {board} {additional_info}\n'.format(board=initial_puzzle,additional_info=additional_info))
     file.write('\n')
-    if additional_info != '':
-        file.write('! ' + additional_info + '\n')    
     file.write(parkingLot.get_board_display())
     file.write('\n')
     file.write('Car fuel available: ')
@@ -57,21 +55,18 @@ def write_solution_to_file(file_name, initial_puzzle, move_order, search_states,
         file.write('Sorry, could not solve the puzzle as specified.\n')
         file.write('Error: no solution found\n')
     
-    file.write(f'Runtime: {runtime:0.5f}\n')
+    file.write(f'Runtime: {runtime:0.5f} seconds \n')
 
     if move_order:
+        file.write(f'Search path length: {str(len(search_states))} states \n')
+        file.write(f'Solution path length: {str(len(move_order))} moves \n')
         file.write(f'Solution path: {"; ".join([f"{state.move[0].name} {state.move[1]} {state.move[2]}" for state in move_order])} \n')
-        file.write(f'Search path length: {str(len(search_states))} \n')
-        file.write(f'Solution path length: {str(len(move_order))} \n')
 
         file.write('\n')
-        moved_vehicles = {}
         for state in move_order:
-            moved_vehicles[state.move[0].name] = f'{state.move[0].name}{str(state.move[0].fuel)}'
-            file.write(f'{state.move[0].name} {state.move[1]} {str(state.move[2])} \t {str(state.move[0].fuel)} {str(state)} \t {" ".join([moved_vehicles[v] for v in moved_vehicles])}\n')
+            file.write(f'{state.move[0].name} {state.move[1]} {str(state.move[2])} \t {str(state.move[0].fuel)} {str(state)}\n')
         
         file.write('\n')
-        file.write('! ' + ' '.join(moved_vehicles.values()) + '\n')
         file.write(move_order[-1].get_board_display() + '\n')
     file.write('--------------------------------------------------------------------------------\n')
 
@@ -106,7 +101,6 @@ def get_file_name(algo_class_name, puzzle_number, heuristic_number, is_sol):
     return file_name
 
 data = []
-columns=['Puzzle Number', 'Algorithm', 'Heuristic', 'Length of the Solution', 'Length of the Search Path', 'Execution Time (in seconds)']
 
 heuristic_count = 1
 
@@ -155,20 +149,44 @@ for i, parkingLot in enumerate(puzzles):
 
         write_solution_to_file(solution_file, parkingLot, move_order, searched_states, execution_time)
         write_to_search_file(search_file, searched_states)
-        data.append([i + 1, algo_name, f'h{heuristic_count}' if algo_name != 'UCS' else 'NA', len(move_order) if move_order else 'NA', len(searched_states), execution_time])
+        data.append([i + 1, algo_name, f'h{heuristic_count}' if algo_name != 'UCS' else 'NA', len(move_order) if move_order else np.nan, len(searched_states), execution_time])
+columns=['Puzzle Number', 'Algorithm', 'Heuristic', 'Length of the Solution', 'Length of the Search Path', 'Execution Time (in seconds)']
 dataFrame = pd.DataFrame(data=data, columns=columns)
 writer = pd.ExcelWriter("Rush Hour Analysis.xlsx", engine='xlsxwriter')
 dataFrame.to_excel(writer, sheet_name='Sheet1', index=False)
 
+avg_columns = ['Algorithm', 'Heuristic','Average Length of the Solution', 'Average Length of the Search Path', 'Average Execution Time (in seconds)']
+
+df = pd.concat([
+dataFrame.loc[dataFrame['Algorithm'] == 'UCS'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0).to_frame().T,
+dataFrame.loc[dataFrame['Algorithm'] == 'GBFS'].loc[dataFrame['Heuristic'] == 'h1'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0, numeric_only=True, skipna=True).to_frame().T,
+dataFrame.loc[dataFrame['Algorithm'] == 'GBFS'].loc[dataFrame['Heuristic'] == 'h2'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0, numeric_only=True, skipna=True).to_frame().T,
+dataFrame.loc[dataFrame['Algorithm'] == 'GBFS'].loc[dataFrame['Heuristic'] == 'h3'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0,numeric_only=True, skipna=True).to_frame().T,
+dataFrame.loc[dataFrame['Algorithm'] == 'GBFS'].loc[dataFrame['Heuristic'] == 'h4'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0,numeric_only=True, skipna=True).to_frame().T,
+dataFrame.loc[dataFrame['Algorithm'] == 'A/A*'].loc[dataFrame['Heuristic'] == 'h1'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0,numeric_only=True, skipna=True).to_frame().T,
+dataFrame.loc[dataFrame['Algorithm'] == 'A/A*'].loc[dataFrame['Heuristic'] == 'h2'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0,numeric_only=True, skipna=True).to_frame().T,
+dataFrame.loc[dataFrame['Algorithm'] == 'A/A*'].loc[dataFrame['Heuristic'] == 'h3'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0,numeric_only=True, skipna=True).to_frame().T,
+dataFrame.loc[dataFrame['Algorithm'] == 'A/A*'].loc[dataFrame['Heuristic'] == 'h4'][['Length of the Solution','Length of the Search Path','Execution Time (in seconds)']].mean(axis=0,numeric_only=True, skipna=True).to_frame().T
+])
+
+df['Algorithm'] = ['UCS', 'GBFS','GBFS','GBFS','GBFS', 'A/A*', 'A/A*', 'A/A*', 'A/A*']
+df['Heuristic'] = ['NA', 'h1','h2','h3','h4','h1','h2','h3','h4',]
+df.to_excel(writer, sheet_name='Averages', index=False)
+
 workbook = writer.book
-workheet = writer.sheets['Sheet1']
+workheet1 = writer.sheets['Sheet1']
+workheet2 = writer.sheets['Averages']
 
 time_format = workbook.add_format({'num_format': '#,###0.000'})
 
-workheet.set_column(0, 0, 15, None)
-workheet.set_column(3, 3, 20, None)
-workheet.set_column(4, 4, 23, None)
-workheet.set_column(5, 5, 25, None)
+workheet1.set_column(0, 0, 15, None)
+workheet1.set_column(3, 3, 20, None)
+workheet1.set_column(4, 4, 23, None)
+workheet1.set_column(5, 5, 25, None)
+
+workheet1.set_column(0, 0, 20, None)
+workheet1.set_column(1, 1, 23, None)
+workheet1.set_column(2, 2, 25, None)
 
 writer.save()
 

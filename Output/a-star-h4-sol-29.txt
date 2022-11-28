@@ -11,20 +11,19 @@ Initial board configuration: ...DDO.....O...AAO...PGG...P.....P..
 
 Car fuel available: D:100, O:100, A:100, P:100, G:100
 
-Runtime: 0.10104
+Runtime: 0.12341 seconds 
+Search path length: 204 states 
+Solution path length: 7 moves 
 Solution path: D L 2; A L 2; P U 3; G L 3; O D 3; P D 3; A R 3 
-Search path length: 204 
-Solution path length: 7 
 
-D L 2 	 98 .DD..O.....O...AAO...PGG...P.....P.. 	 D98
-A L 2 	 98 .DD..O.....O.AA..O...PGG...P.....P.. 	 D98 A98
-P U 3 	 97 .DDP.O...P.O.AAP.O....GG............ 	 D98 A98 P97
-G L 3 	 97 .DDP.O...P.O.AAP.O.GG............... 	 D98 A98 P97 G97
-O D 3 	 97 .DDP.....P...AAP...GG..O.....O.....O 	 D98 A98 P97 G97 O97
-P D 3 	 94 .DD..........AA....GGP.O...P.O...P.O 	 D98 A98 P94 G97 O97
-A R 3 	 95 .DD.............AA.GGP.O...P.O...P.O 	 D98 A95 P94 G97 O97
+D L 2 	 98 .DD..O.....O...AAO...PGG...P.....P..
+A L 2 	 98 .DD..O.....O.AA..O...PGG...P.....P..
+P U 3 	 97 .DDP.O...P.O.AAP.O....GG............
+G L 3 	 97 .DDP.O...P.O.AAP.O.GG...............
+O D 3 	 97 .DDP.....P...AAP...GG..O.....O.....O
+P D 3 	 94 .DD..........AA....GGP.O...P.O...P.O
+A R 3 	 95 .DD.............AA.GGP.O...P.O...P.O
 
-! D98 A95 P94 G97 O97
 .DD...
 ......
 ....AA

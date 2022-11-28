@@ -11,20 +11,19 @@ CFFG.E
 
 Car fuel available: B:100, O:100, A:100, K:100, C:100, D:100, E:100, F:100, G:100, I:100
 
-Runtime: 0.14908
+Runtime: 0.18589 seconds 
+Search path length: 355 states 
+Solution path length: 7 moves 
 Solution path: E U 3; D R 1; G U 2; F R 3; G D 1; K D 1; A R 4 
-Search path length: 355 
-Solution path length: 7 
 
-E U 3 	 97 ...B.EOOOB.EAAK...C.KDD.CFFG.....GII 	 E97
-D R 1 	 99 ...B.EOOOB.EAAK...C.K.DDCFFG.....GII 	 E97 D99
-G U 2 	 98 ...B.EOOOB.EAAKG..C.KGDDCFF.......II 	 E97 D99 G98
-F R 3 	 97 ...B.EOOOB.EAAKG..C.KGDDC...FF....II 	 E97 D99 G98 F97
-G D 1 	 97 ...B.EOOOB.EAAK...C.KGDDC..GFF....II 	 E97 D99 G97 F97
-K D 1 	 99 ...B.EOOOB.EAA....C.KGDDC.KGFF....II 	 E97 D99 G97 F97 K99
-A R 4 	 96 ...B.EOOOB.E....AAC.KGDDC.KGFF....II 	 E97 D99 G97 F97 K99 A96
+E U 3 	 97 ...B.EOOOB.EAAK...C.KDD.CFFG.....GII
+D R 1 	 99 ...B.EOOOB.EAAK...C.K.DDCFFG.....GII
+G U 2 	 98 ...B.EOOOB.EAAKG..C.KGDDCFF.......II
+F R 3 	 97 ...B.EOOOB.EAAKG..C.KGDDC...FF....II
+G D 1 	 97 ...B.EOOOB.EAAK...C.KGDDC..GFF....II
+K D 1 	 99 ...B.EOOOB.EAA....C.KGDDC.KGFF....II
+A R 4 	 96 ...B.EOOOB.E....AAC.KGDDC.KGFF....II
 
-! E97 D99 G97 F97 K99 A96
 ...B.E
 OOOB.E
 ....AA

@@ -11,24 +11,23 @@ Initial board configuration: ....OP....OP..AAOP..QRBB..QRDD..QRCC
 
 Car fuel available: O:100, P:100, A:100, Q:100, R:100, B:100, D:100, C:100
 
-Runtime: 2.05579
+Runtime: 3.29691 seconds 
+Search path length: 4009 states 
+Solution path length: 11 moves 
 Solution path: A L 2; R U 3; Q U 3; D L 4; C L 4; B L 4; Q D 3; R D 3; O D 3; P D 3; A R 4 
-Search path length: 4009 
-Solution path length: 11 
 
-A L 2 	 98 ....OP....OPAA..OP..QRBB..QRDD..QRCC 	 A98
-R U 3 	 97 ...ROP...ROPAA.ROP..Q.BB..Q.DD..Q.CC 	 A98 R97
-Q U 3 	 97 ..QROP..QROPAAQROP....BB....DD....CC 	 A98 R97 Q97
-D L 4 	 96 ..QROP..QROPAAQROP....BBDD........CC 	 A98 R97 Q97 D96
-C L 4 	 96 ..QROP..QROPAAQROP....BBDD....CC.... 	 A98 R97 Q97 D96 C96
-B L 4 	 96 ..QROP..QROPAAQROPBB....DD....CC.... 	 A98 R97 Q97 D96 C96 B96
-Q D 3 	 94 ...ROP...ROPAA.ROPBBQ...DDQ...CCQ... 	 A98 R97 Q94 D96 C96 B96
-R D 3 	 94 ....OP....OPAA..OPBBQR..DDQR..CCQR.. 	 A98 R94 Q94 D96 C96 B96
-O D 3 	 97 .....P.....PAA...PBBQRO.DDQRO.CCQRO. 	 A98 R94 Q94 D96 C96 B96 O97
-P D 3 	 97 ............AA....BBQROPDDQROPCCQROP 	 A98 R94 Q94 D96 C96 B96 O97 P97
-A R 4 	 94 ................AABBQROPDDQROPCCQROP 	 A94 R94 Q94 D96 C96 B96 O97 P97
+A L 2 	 98 ....OP....OPAA..OP..QRBB..QRDD..QRCC
+R U 3 	 97 ...ROP...ROPAA.ROP..Q.BB..Q.DD..Q.CC
+Q U 3 	 97 ..QROP..QROPAAQROP....BB....DD....CC
+D L 4 	 96 ..QROP..QROPAAQROP....BBDD........CC
+C L 4 	 96 ..QROP..QROPAAQROP....BBDD....CC....
+B L 4 	 96 ..QROP..QROPAAQROPBB....DD....CC....
+Q D 3 	 94 ...ROP...ROPAA.ROPBBQ...DDQ...CCQ...
+R D 3 	 94 ....OP....OPAA..OPBBQR..DDQR..CCQR..
+O D 3 	 97 .....P.....PAA...PBBQRO.DDQRO.CCQRO.
+P D 3 	 97 ............AA....BBQROPDDQROPCCQROP
+A R 4 	 94 ................AABBQROPDDQROPCCQROP
 
-! A94 R94 Q94 D96 C96 B96 O97 P97
 ......
 ......
 ....AA

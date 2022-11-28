@@ -11,29 +11,28 @@ QQQD.P
 
 Car fuel available: O:100, B:100, P:100, A:100, Q:100, D:100, C:100
 
-Runtime: 0.20473
+Runtime: 0.16812 seconds 
+Search path length: 350 states 
+Solution path length: 16 moves 
 Solution path: P U 1; D D 1; Q R 3; O D 3; A L 3; O U 3; Q L 3; D U 4; Q R 3; O D 3; A R 3; O U 3; Q L 2; C L 2; P D 3; A R 1 
-Search path length: 350 
-Solution path length: 16 
 
-P U 1 	 99 ..O..PBBO..P..OAAPQQQD.....DCC...... 	 P99
-D D 1 	 99 ..O..PBBO..P..OAAPQQQ......DCC...D.. 	 P99 D99
-Q R 3 	 97 ..O..PBBO..P..OAAP...QQQ...DCC...D.. 	 P99 D99 Q97
-O D 3 	 97 .....PBB...P...AAP..OQQQ..ODCC..OD.. 	 P99 D99 Q97 O97
-A L 3 	 97 .....PBB...PAA...P..OQQQ..ODCC..OD.. 	 P99 D99 Q97 O97 A97
-O U 3 	 94 ..O..PBBO..PAAO..P...QQQ...DCC...D.. 	 P99 D99 Q97 O94 A97
-Q L 3 	 94 ..O..PBBO..PAAO..PQQQ......DCC...D.. 	 P99 D99 Q94 O94 A97
-D U 4 	 95 ..OD.PBBOD.PAAO..PQQQ.......CC...... 	 P99 D95 Q94 O94 A97
-Q R 3 	 91 ..OD.PBBOD.PAAO..P...QQQ....CC...... 	 P99 D95 Q91 O94 A97
-O D 3 	 91 ...D.PBB.D.PAA...P..OQQQ..O.CC..O... 	 P99 D95 Q91 O91 A97
-A R 3 	 94 ...D.PBB.D.P...AAP..OQQQ..O.CC..O... 	 P99 D95 Q91 O91 A94
-O U 3 	 88 ..OD.PBBOD.P..OAAP...QQQ....CC...... 	 P99 D95 Q91 O88 A94
-Q L 2 	 89 ..OD.PBBOD.P..OAAP.QQQ......CC...... 	 P99 D95 Q89 O88 A94
-C L 2 	 98 ..OD.PBBOD.P..OAAP.QQQ....CC........ 	 P99 D95 Q89 O88 A94 C98
-P D 3 	 96 ..OD..BBOD....OAA..QQQ.P..CC.P.....P 	 P96 D95 Q89 O88 A94 C98
-A R 1 	 93 ..OD..BBOD....O.AA.QQQ.P..CC.P.....P 	 P96 D95 Q89 O88 A93 C98
+P U 1 	 99 ..O..PBBO..P..OAAPQQQD.....DCC......
+D D 1 	 99 ..O..PBBO..P..OAAPQQQ......DCC...D..
+Q R 3 	 97 ..O..PBBO..P..OAAP...QQQ...DCC...D..
+O D 3 	 97 .....PBB...P...AAP..OQQQ..ODCC..OD..
+A L 3 	 97 .....PBB...PAA...P..OQQQ..ODCC..OD..
+O U 3 	 94 ..O..PBBO..PAAO..P...QQQ...DCC...D..
+Q L 3 	 94 ..O..PBBO..PAAO..PQQQ......DCC...D..
+D U 4 	 95 ..OD.PBBOD.PAAO..PQQQ.......CC......
+Q R 3 	 91 ..OD.PBBOD.PAAO..P...QQQ....CC......
+O D 3 	 91 ...D.PBB.D.PAA...P..OQQQ..O.CC..O...
+A R 3 	 94 ...D.PBB.D.P...AAP..OQQQ..O.CC..O...
+O U 3 	 88 ..OD.PBBOD.P..OAAP...QQQ....CC......
+Q L 2 	 89 ..OD.PBBOD.P..OAAP.QQQ......CC......
+C L 2 	 98 ..OD.PBBOD.P..OAAP.QQQ....CC........
+P D 3 	 96 ..OD..BBOD....OAA..QQQ.P..CC.P.....P
+A R 1 	 93 ..OD..BBOD....O.AA.QQQ.P..CC.P.....P
 
-! P96 D95 Q89 O88 A93 C98
 ..OD..
 BBOD..
 ..O.AA
