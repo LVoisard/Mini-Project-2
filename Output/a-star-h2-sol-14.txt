@@ -11,7 +11,7 @@ KK.JLL
 
 Car fuel available: B:100, C:100, D:100, O:100, E:100, F:100, A:100, G:100, H:100, I:100, J:100, K:100, L:100
 
-Runtime: 1.38126 seconds 
+Runtime: 1.06985 seconds 
 Search path length: 2332 states 
 Solution path length: 25 moves 
 Solution path: I R 1; K R 1; F D 2; A L 1; C D 2; D L 2; E L 2; G U 2; J U 2; I R 3; C D 1; J D 2; A R 3; B D 2; D L 1; E L 1; C U 3; A L 2; H L 3; J U 2; I L 3; J D 1; L L 1; O D 3; A R 3 

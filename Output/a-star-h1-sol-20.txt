@@ -11,7 +11,7 @@ FFGH.P
 
 Car fuel available: O:100, B:100, C:100, D:100, E:100, P:100, A:100, F:100, G:100, H:100, I:100, J:100, K:100
 
-Runtime: 3.40455 seconds 
+Runtime: 2.99835 seconds 
 Search path length: 4742 states 
 Solution path length: 28 moves 
 Solution path: C L 1; A R 1; K R 1; J L 1; H D 1; G D 1; P U 1; F R 4; B D 2; O D 2; C L 3; H U 1; D D 2; E L 3; B U 2; G U 1; J R 2; O D 1; A L 2; H U 3; A R 1; O U 1; J L 2; I L 1; K L 2; F L 1; P D 3; A R 2 

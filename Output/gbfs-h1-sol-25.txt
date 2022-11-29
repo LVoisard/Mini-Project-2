@@ -11,7 +11,7 @@ QRFGHH
 
 Car fuel available: B:100, C:100, D:100, E:100, O:100, P:100, Q:100, R:100, A:100, F:100, G:100, H:100, I:100, J:100
 
-Runtime: 0.20884 seconds 
+Runtime: 0.31464 seconds 
 Search path length: 400 states 
 Solution path length: 37 moves 
 Solution path: J R 1; I L 1; C R 1; I R 2; R D 1; C L 1; Q D 1; R U 1; P U 1; B L 1; R D 1; C L 1; P D 1; A L 1; C R 1; G U 1; H L 1; P D 1; C R 1; A L 1; F U 1; H L 1; B R 2; O D 1; B L 1; E R 2; G U 2; B L 1; F U 2; A R 2; Q U 1; R U 1; I L 2; J L 2; P D 1; O D 1; A R 2 

@@ -11,22 +11,22 @@ AADO..
 
 Car fuel available: B:100, C:100, O:100, D:100, A:100, P:100
 
-Runtime: 0.02347 seconds 
-Search path length: 43 states 
+Runtime: 0.02338 seconds 
+Search path length: 30 states 
 Solution path length: 5 moves 
-Solution path: P L 1; O D 3; C R 3; D U 1; A R 4 
+Solution path: P R 2; D D 3; P L 3; O D 3; A R 4 
 
-P L 1 	 99 BCCO..B.DO..AADO..PPP...............
-O D 3 	 97 BCC...B.D...AAD...PPPO.....O.....O..
-C R 3 	 97 B...CCB.D...AAD...PPPO.....O.....O..
-D U 1 	 99 B.D.CCB.D...AA....PPPO.....O.....O..
-A R 4 	 96 B.D.CCB.D.......AAPPPO.....O.....O..
+P R 2 	 98 BCCO..B.DO..AADO.....PPP............
+D D 3 	 97 BCCO..B..O..AA.O.....PPP..D.....D...
+P L 3 	 95 BCCO..B..O..AA.O..PPP.....D.....D...
+O D 3 	 97 BCC...B.....AA....PPPO....DO....DO..
+A R 4 	 96 BCC...B.........AAPPPO....DO....DO..
 
-B.D.CC
-B.D...
+BCC...
+B.....
 ....AA
 PPPO..
-...O..
-...O..
+..DO..
+..DO..
 
 --------------------------------------------------------------------------------

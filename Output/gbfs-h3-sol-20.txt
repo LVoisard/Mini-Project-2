@@ -11,7 +11,7 @@ FFGH.P
 
 Car fuel available: O:100, B:100, C:100, D:100, E:100, P:100, A:100, F:100, G:100, H:100, I:100, J:100, K:100
 
-Runtime: 1.05871 seconds 
+Runtime: 0.88219 seconds 
 Search path length: 1424 states 
 Solution path length: 119 moves 
 Solution path: K R 1; J L 1; G D 1; K L 1; F R 1; A R 1; K R 1; H D 1; F L 1; B D 2; H U 1; B U 1; K L 1; G U 1; C L 2; K L 1; P U 1; D U 1; K R 1; C R 1; G D 1; B D 1; C L 1; D D 1; K R 1; H D 1; C R 1; B U 1; F R 3; G U 1; B U 1; G U 1; F R 1; H U 1; G D 1; K L 2; B D 1; K R 1; C L 1; K R 1; D D 1; K L 2; D D 1; O D 2; D U 3; O U 1; D D 1; C L 2; D D 2; C R 3; D U 1; C L 2; O D 1; C L 1; K R 2; C R 3; K L 1; D U 2; O U 1; C L 2; D D 3; C R 1; D U 1; C L 2; B U 1; D D 1; K R 1; G U 1; K L 2; D U 2; K R 1; G D 2; B D 2; D D 1; C R 3; D U 2; C L 2; D D 3; E L 1; D U 2; O D 1; D D 1; E L 2; D D 1; C R 1; B U 1; C L 2; B U 1; G U 2; K L 1; G D 1; K R 2; J R 2; O D 1; A L 3; H U 3; A R 2; O U 1; J L 1; K L 1; D D 1; F L 1; A R 1; G U 1; P D 1; D U 1; G D 1; A L 1; K R 1; D D 1; A R 1; D U 2; B D 1; K L 1; D D 2; I L 1; D U 1; P D 2; A R 1 

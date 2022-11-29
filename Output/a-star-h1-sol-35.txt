@@ -11,7 +11,7 @@ Q....D
 
 Car fuel available: O:100, P:100, B:100, A:100, Q:100, G:100, C:100, D:100
 
-Runtime: 0.19127 seconds 
+Runtime: 0.30609 seconds 
 Search path length: 340 states 
 Solution path length: 10 moves 
 Solution path: D U 3; C R 1; P D 3; O R 3; B U 1; A R 3; B D 1; O L 3; D U 1; A R 1 
