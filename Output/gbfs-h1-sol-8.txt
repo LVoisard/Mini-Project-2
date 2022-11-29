@@ -11,7 +11,7 @@ KKJQQQ
 
 Car fuel available: B:100, O:100, C:100, D:100, A:100, E:100, F:100, G:100, H:100, I:100, J:100, P:100, K:100, Q:100
 
-Runtime: 0.09282 seconds 
+Runtime: 0.06177 seconds 
 Search path length: 118 states 
 Solution path length: 15 moves 
 Solution path: B L 3; D U 1; C L 2; F U 1; E U 2; A R 1; F U 1; H L 1; A R 2; J U 2; P L 1; O D 1; Q L 1; O D 2; A R 1 

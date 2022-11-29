@@ -11,7 +11,7 @@ HH.FII
 
 Car fuel available: B:100, C:100, D:100, E:100, O:100, P:100, A:100, Q:100, F:100, G:100, H:100, I:100
 
-Runtime: 1.24931 seconds 
+Runtime: 0.90279 seconds 
 Search path length: 1959 states 
 Solution path length: 17 moves 
 Solution path: D L 1; A R 2; O U 1; Q R 2; C D 4; B R 1; A L 2; E R 1; P U 2; Q L 3; O D 1; D R 1; F U 4; I L 1; G L 1; O D 2; A R 3 

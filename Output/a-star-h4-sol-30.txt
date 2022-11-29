@@ -11,25 +11,24 @@ AADEFG
 
 Car fuel available: B:100, C:100, D:100, E:100, F:100, G:100, A:100, H:100, I:100
 
-Runtime: 1.49729 seconds 
-Search path length: 2300 states 
-Solution path length: 8 moves 
-Solution path: B L 2; E U 1; H L 2; I L 2; F D 3; D U 1; G D 2; A R 4 
+Runtime: 0.11807 seconds 
+Search path length: 98 states 
+Solution path length: 7 moves 
+Solution path: H L 2; D D 3; E D 3; I L 2; F D 2; G D 3; A R 4 
 
-B L 2 	 98 BB..CC..DEFGAADEFG..HHII............
-E U 1 	 99 BB.ECC..DEFGAAD.FG..HHII............
-H L 2 	 98 BB.ECC..DEFGAAD.FGHH..II............
-I L 2 	 98 BB.ECC..DEFGAAD.FGHHII..............
-F D 3 	 97 BB.ECC..DE.GAAD..GHHII......F.....F.
-D U 1 	 99 BBDECC..DE.GAA...GHHII......F.....F.
-G D 2 	 98 BBDECC..DE..AA....HHII.G....FG....F.
-A R 4 	 96 BBDECC..DE......AAHHII.G....FG....F.
+H L 2 	 98 ..BBCC..DEFGAADEFGHH..II............
+D D 3 	 97 ..BBCC...EFGAA.EFGHH..II..D.....D...
+E D 3 	 97 ..BBCC....FGAA..FGHH..II..DE....DE..
+I L 2 	 98 ..BBCC....FGAA..FGHHII....DE....DE..
+F D 2 	 98 ..BBCC.....GAA...GHHIIF...DEF...DE..
+G D 3 	 97 ..BBCC......AA....HHIIF...DEFG..DE.G
+A R 4 	 96 ..BBCC..........AAHHIIF...DEFG..DE.G
 
-BBDECC
-..DE..
+..BBCC
+......
 ....AA
-HHII.G
-....FG
-....F.
+HHIIF.
+..DEFG
+..DE.G
 
 --------------------------------------------------------------------------------

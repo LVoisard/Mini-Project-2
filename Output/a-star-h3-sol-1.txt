@@ -11,7 +11,7 @@ C.RRR.
 
 Car fuel available: B:100, O:100, P:100, Q:100, A:100, C:100, D:100, R:100
 
-Runtime: 1.43891 seconds 
+Runtime: 0.86115 seconds 
 Search path length: 1579 states 
 Solution path length: 9 moves 
 Solution path: D L 2; O D 3; B R 2; P U 1; C U 1; D L 1; R L 2; Q D 2; A R 3 

@@ -11,34 +11,34 @@ RRR.D.
 
 Car fuel available: B:100, C:100, O:100, P:100, A:100, Q:100, D:100, R:100
 
-Runtime: 0.74271 seconds 
-Search path length: 1274 states 
+Runtime: 0.44023 seconds 
+Search path length: 783 states 
 Solution path length: 17 moves 
-Solution path: C R 2; P U 1; Q L 2; D U 3; Q R 2; R R 3; P D 3; C L 1; D U 1; A R 3; B D 1; C L 2; P U 3; R L 2; Q L 3; O D 3; A R 1 
+Solution path: C R 2; P U 1; Q L 3; D U 3; R R 3; Q R 3; P D 3; A R 1; B D 2; C L 3; D U 1; A R 2; P U 3; Q L 1; R L 1; O D 3; A R 1 
 
 C R 2 	 98 B..CCOB.P..OAAP..O..PQQQ....D.RRR.D.
 P U 1 	 99 B.PCCOB.P..OAAP..O...QQQ....D.RRR.D.
-Q L 2 	 98 B.PCCOB.P..OAAP..O.QQQ......D.RRR.D.
-D U 3 	 97 B.PCCOB.P.DOAAP.DO.QQQ........RRR...
-Q R 2 	 96 B.PCCOB.P.DOAAP.DO...QQQ......RRR...
-R R 3 	 97 B.PCCOB.P.DOAAP.DO...QQQ.........RRR
+Q L 3 	 97 B.PCCOB.P..OAAP..OQQQ.......D.RRR.D.
+D U 3 	 97 B.PCCOB.P.DOAAP.DOQQQ.........RRR...
+R R 3 	 97 B.PCCOB.P.DOAAP.DOQQQ............RRR
+Q R 3 	 94 B.PCCOB.P.DOAAP.DO...QQQ.........RRR
 P D 3 	 96 B..CCOB...DOAA..DO..PQQQ..P.....PRRR
-C L 1 	 97 B.CC.OB...DOAA..DO..PQQQ..P.....PRRR
-D U 1 	 96 B.CCDOB...DOAA...O..PQQQ..P.....PRRR
-A R 3 	 97 B.CCDOB...DO...AAO..PQQQ..P.....PRRR
-B D 1 	 99 ..CCDOB...DOB..AAO..PQQQ..P.....PRRR
-C L 2 	 95 CC..DOB...DOB..AAO..PQQQ..P.....PRRR
-P U 3 	 93 CCP.DOB.P.DOB.PAAO...QQQ.........RRR
-R L 2 	 95 CCP.DOB.P.DOB.PAAO...QQQ.......RRR..
-Q L 3 	 93 CCP.DOB.P.DOB.PAAOQQQ..........RRR..
-O D 3 	 97 CCP.D.B.P.D.B.PAA.QQQ..O.....O.RRR.O
-A R 1 	 96 CCP.D.B.P.D.B.P.AAQQQ..O.....O.RRR.O
+A R 1 	 99 B..CCOB...DO.AA.DO..PQQQ..P.....PRRR
+B D 2 	 98 ...CCO....DOBAA.DOB.PQQQ..P.....PRRR
+C L 3 	 95 CC...O....DOBAA.DOB.PQQQ..P.....PRRR
+D U 1 	 96 CC..DO....DOBAA..OB.PQQQ..P.....PRRR
+A R 2 	 97 CC..DO....DOB..AAOB.PQQQ..P.....PRRR
+P U 3 	 93 CCP.DO..P.DOB.PAAOB..QQQ.........RRR
+Q L 1 	 93 CCP.DO..P.DOB.PAAOB.QQQ..........RRR
+R L 1 	 96 CCP.DO..P.DOB.PAAOB.QQQ.........RRR.
+O D 3 	 97 CCP.D...P.D.B.PAA.B.QQQO.....O..RRRO
+A R 1 	 96 CCP.D...P.D.B.P.AAB.QQQO.....O..RRRO
 
 CCP.D.
-B.P.D.
+..P.D.
 B.P.AA
-QQQ..O
+B.QQQO
 .....O
-.RRR.O
+..RRRO
 
 --------------------------------------------------------------------------------

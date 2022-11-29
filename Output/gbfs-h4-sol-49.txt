@@ -11,34 +11,37 @@ AADO.C
 
 Car fuel available: B:100, O:100, J:100, C:100, A:100, D:100, E:100, F:100, H:100, G:100, I:100
 
-Runtime: 0.04930 seconds 
-Search path length: 90 states 
-Solution path length: 17 moves 
-Solution path: C U 1; I L 1; F D 1; E R 1; H U 1; O D 2; J R 2; D U 1; G U 1; I L 2; C D 1; O D 1; D U 1; A R 3; D D 1; C U 1; A R 1 
+Runtime: 0.09462 seconds 
+Search path length: 79 states 
+Solution path length: 20 moves 
+Solution path: C U 1; H U 1; I L 1; F D 1; E R 1; O D 2; H D 1; J R 2; D U 2; A R 1; B D 2; G U 1; B D 2; H U 1; B U 3; I L 3; O D 1; A R 2; H U 2; A R 1 
 
 C U 1 	 99 B..O.CBJJO.CAADO....DEEF.HG..F.HG.II
-I L 1 	 99 B..O.CBJJO.CAADO....DEEF.HG..F.HGII.
-F D 1 	 99 B..O.CBJJO.CAADO....DEE..HG..F.HGIIF
-E R 1 	 99 B..O.CBJJO.CAADO....D.EE.HG..F.HGIIF
-H U 1 	 99 B..O.CBJJO.CAADO...HD.EE.HG..F..GIIF
+H U 1 	 99 B..O.CBJJO.CAADO...HDEEF.HG..F..G.II
+I L 1 	 99 B..O.CBJJO.CAADO...HDEEF.HG..F..GII.
+F D 1 	 99 B..O.CBJJO.CAADO...HDEE..HG..F..GIIF
+E R 1 	 99 B..O.CBJJO.CAADO...HD.EE.HG..F..GIIF
 O D 2 	 98 B....CBJJ..CAADO...HDOEE.HGO.F..GIIF
-J R 2 	 98 B....CB..JJCAADO...HDOEE.HGO.F..GIIF
-D U 1 	 99 B....CB.DJJCAADO...H.OEE.HGO.F..GIIF
-G U 1 	 99 B....CB.DJJCAADO...HGOEE.HGO.F...IIF
-I L 2 	 97 B....CB.DJJCAADO...HGOEE.HGO.F.II..F
-C D 1 	 98 B.....B.DJJCAADO.C.HGOEE.HGO.F.II..F
-O D 1 	 97 B.....B.DJJCAAD..C.HGOEE.HGO.F.IIO.F
-D U 1 	 98 B.D...B.DJJCAA...C.HGOEE.HGO.F.IIO.F
-A R 3 	 97 B.D...B.DJJC...AAC.HGOEE.HGO.F.IIO.F
-D D 1 	 97 B.....B.DJJC..DAAC.HGOEE.HGO.F.IIO.F
-C U 1 	 97 B....CB.DJJC..DAA..HGOEE.HGO.F.IIO.F
-A R 1 	 96 B....CB.DJJC..D.AA.HGOEE.HGO.F.IIO.F
+H D 1 	 98 B....CBJJ..CAADO....DOEE.HGO.F.HGIIF
+J R 2 	 98 B....CB..JJCAADO....DOEE.HGO.F.HGIIF
+D U 2 	 98 B.D..CB.DJJCAA.O.....OEE.HGO.F.HGIIF
+A R 1 	 99 B.D..CB.DJJC.AAO.....OEE.HGO.F.HGIIF
+B D 2 	 98 ..D..C..DJJCBAAO..B..OEE.HGO.F.HGIIF
+G U 1 	 99 ..D..C..DJJCBAAO..B.GOEE.HGO.F.H.IIF
+B D 2 	 96 ..D..C..DJJC.AAO....GOEEBHGO.FBH.IIF
+H U 1 	 97 ..D..C..DJJC.AAO...HGOEEBHGO.FB..IIF
+B U 3 	 93 ..D..CB.DJJCBAAO...HGOEE.HGO.F...IIF
+I L 3 	 96 ..D..CB.DJJCBAAO...HGOEE.HGO.FII...F
+O D 1 	 97 ..D..CB.DJJCBAA....HGOEE.HGO.FII.O.F
+A R 2 	 97 ..D..CB.DJJCB..AA..HGOEE.HGO.FII.O.F
+H U 2 	 95 ..D..CBHDJJCBH.AA...GOEE..GO.FII.O.F
+A R 1 	 96 ..D..CBHDJJCBH..AA..GOEE..GO.FII.O.F
 
-B....C
-B.DJJC
-..D.AA
-.HGOEE
-.HGO.F
-.IIO.F
+..D..C
+BHDJJC
+BH..AA
+..GOEE
+..GO.F
+II.O.F
 
 --------------------------------------------------------------------------------

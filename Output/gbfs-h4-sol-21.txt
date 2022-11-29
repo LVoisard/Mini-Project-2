@@ -1,17 +1,64 @@
 --------------------------------------------------------------------------------
 
-Initial board configuration: OBBP..O..P.........CQQQ..C......RRR. 
+Initial board configuration: OBBP..O..P..OAAP....CQQQ..C..E..RRRE 
 
 OBBP..
 O..P..
-......
-.CQQQ.
-.C....
-..RRR.
+OAAP..
+..CQQQ
+..C..E
+..RRRE
 
-Car fuel available: O:100, B:100, P:100, C:100, Q:100, R:100
+Car fuel available: O:100, B:100, P:100, A:100, C:100, Q:100, E:100, R:100
 
-Sorry, could not solve the puzzle as specified.
-Error: no solution found
-Runtime: 1.19488 seconds 
+Runtime: 0.23564 seconds 
+Search path length: 501 states 
+Solution path length: 37 moves 
+Solution path: O D 3; R L 1; A L 1; B L 1; C U 3; Q L 1; E U 1; R R 2; E U 3; Q R 1; C D 4; A R 1; B R 1; O U 3; Q L 3; P D 2; E D 3; B R 3; P U 2; E U 2; Q R 3; O D 3; C U 1; A L 1; C U 3; Q L 2; E D 2; R L 1; A R 1; Q R 1; O U 3; Q L 2; R L 1; E D 1; R L 1; P D 3; A R 3 
+
+O D 3 	 97 .BBP.....P...AAP..O.CQQQO.C..EO.RRRE
+R L 1 	 99 .BBP.....P...AAP..O.CQQQO.C..EORRR.E
+A L 1 	 99 .BBP.....P..AA.P..O.CQQQO.C..EORRR.E
+B L 1 	 99 BB.P.....P..AA.P..O.CQQQO.C..EORRR.E
+C U 3 	 97 BBCP....CP..AA.P..O..QQQO....EORRR.E
+Q L 1 	 99 BBCP....CP..AA.P..O.QQQ.O....EORRR.E
+E U 1 	 99 BBCP....CP..AA.P..O.QQQEO....EORRR..
+R R 2 	 97 BBCP....CP..AA.P..O.QQQEO....EO..RRR
+E U 3 	 96 BBCP.E..CP.EAA.P..O.QQQ.O.....O..RRR
+Q R 1 	 98 BBCP.E..CP.EAA.P..O..QQQO.....O..RRR
+C D 4 	 93 BB.P.E...P.EAA.P..O..QQQO.C...O.CRRR
+A R 1 	 98 BB.P.E...P.E.AAP..O..QQQO.C...O.CRRR
+B R 1 	 98 .BBP.E...P.E.AAP..O..QQQO.C...O.CRRR
+O U 3 	 94 OBBP.EO..P.EOAAP.....QQQ..C.....CRRR
+Q L 3 	 95 OBBP.EO..P.EOAAP..QQQ.....C.....CRRR
+P D 2 	 98 OBB..EO....EOAAP..QQQP....CP....CRRR
+E D 3 	 93 OBB...O.....OAAP..QQQP.E..CP.E..CRRR
+B R 3 	 95 O...BBO.....OAAP..QQQP.E..CP.E..CRRR
+P U 2 	 96 O..PBBO..P..OAAP..QQQ..E..C..E..CRRR
+E U 2 	 91 O..PBBO..P.EOAAP.EQQQ.....C.....CRRR
+Q R 3 	 92 O..PBBO..P.EOAAP.E...QQQ..C.....CRRR
+O D 3 	 91 ...PBB...P.E.AAP.EO..QQQO.C...O.CRRR
+C U 1 	 92 ...PBB...P.E.AAP.EO.CQQQO.C...O..RRR
+A L 1 	 97 ...PBB...P.EAA.P.EO.CQQQO.C...O..RRR
+C U 3 	 89 ..CPBB..CP.EAA.P.EO..QQQO.....O..RRR
+Q L 2 	 90 ..CPBB..CP.EAA.P.EOQQQ..O.....O..RRR
+E D 2 	 89 ..CPBB..CP..AA.P..OQQQ.EO....EO..RRR
+R L 1 	 96 ..CPBB..CP..AA.P..OQQQ.EO....EO.RRR.
+A R 1 	 96 ..CPBB..CP...AAP..OQQQ.EO....EO.RRR.
+Q R 1 	 89 ..CPBB..CP...AAP..O.QQQEO....EO.RRR.
+O U 3 	 88 O.CPBBO.CP..OAAP....QQQE.....E..RRR.
+Q L 2 	 87 O.CPBBO.CP..OAAP..QQQ..E.....E..RRR.
+R L 1 	 95 O.CPBBO.CP..OAAP..QQQ..E.....E.RRR..
+E D 1 	 88 O.CPBBO.CP..OAAP..QQQ........E.RRR.E
+R L 1 	 94 O.CPBBO.CP..OAAP..QQQ........ERRR..E
+P D 3 	 93 O.C.BBO.C...OAA...QQQP.....P.ERRRP.E
+A R 3 	 93 O.C.BBO.C...O...AAQQQP.....P.ERRRP.E
+
+O.C.BB
+O.C...
+O...AA
+QQQP..
+...P.E
+RRRP.E
+
 --------------------------------------------------------------------------------

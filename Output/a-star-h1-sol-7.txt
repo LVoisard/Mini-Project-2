@@ -11,7 +11,7 @@ Initial board configuration: .BCCDE.B.FDE.AAF.G..HH.G...I.....I..
 
 Car fuel available: B:100, C:100, D:100, E:100, F:100, A:100, G:100, H:100, I:100
 
-Runtime: 1.87577 seconds 
+Runtime: 1.29265 seconds 
 Search path length: 2564 states 
 Solution path length: 13 moves 
 Solution path: G D 2; D D 4; E D 1; C R 2; F U 1; A R 2; B D 4; A L 3; F D 1; C L 4; E U 1; F U 1; A R 4 
