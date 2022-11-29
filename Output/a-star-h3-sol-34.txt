@@ -11,7 +11,7 @@ AAB..P
 
 Car fuel available: O:100, P:100, A:100, B:100, J:100, C:100, D:100, Q:100
 
-Runtime: 0.17927 seconds 
+Runtime: 0.12199 seconds 
 Search path length: 183 states 
 Solution path length: 10 moves 
 Solution path: B U 1; J U 3; C L 4; D U 1; Q L 3; P D 3; J D 4; O R 3; B U 1; A R 4 

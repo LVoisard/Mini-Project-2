@@ -11,10 +11,10 @@ CFFG.E
 
 Car fuel available: B:100, O:100, A:100, K:100, C:100, D:100, E:100, F:100, G:100, I:100
 
-Runtime: 0.10535 seconds 
-Search path length: 142 states 
-Solution path length: 22 moves 
-Solution path: E U 3; D R 1; G U 1; I L 3; G D 1; D L 1; C D 1; E D 4; D R 1; B D 2; O R 3; K U 2; A R 1; C U 4; A L 1; F L 1; K D 3; A R 1; C D 2; O L 3; B U 2; A R 3 
+Runtime: 0.11623 seconds 
+Search path length: 164 states 
+Solution path length: 29 moves 
+Solution path: E U 3; D R 1; G U 1; I L 3; G D 1; D L 1; C D 1; E D 4; D R 1; B D 2; O R 2; C U 1; O R 1; K U 2; A R 1; I L 1; C U 3; A L 1; F L 1; K D 4; A R 1; O L 1; C D 2; O L 2; B U 2; G U 1; A R 1; K U 1; A R 2 
 
 E U 3 	 97 ...B.EOOOB.EAAK...C.KDD.CFFG.....GII
 D R 1 	 99 ...B.EOOOB.EAAK...C.K.DDCFFG.....GII
@@ -26,24 +26,31 @@ C D 1 	 99 ...B.EOOOB.EAAK.....KDD.CFFG..CIIG..
 E D 4 	 93 ...B..OOOB..AAK.....KDD.CFFG.ECIIG.E
 D R 1 	 97 ...B..OOOB..AAK.....K.DDCFFG.ECIIG.E
 B D 2 	 98 ......OOO...AAKB....KBDDCFFG.ECIIG.E
-O R 3 	 97 .........OOOAAKB....KBDDCFFG.ECIIG.E
-K U 2 	 98 ..K.....KOOOAA.B.....BDDCFFG.ECIIG.E
-A R 1 	 99 ..K.....KOOO.AAB.....BDDCFFG.ECIIG.E
-C U 4 	 95 C.K...C.KOOO.AAB.....BDD.FFG.E.IIG.E
-A L 1 	 98 C.K...C.KOOOAA.B.....BDD.FFG.E.IIG.E
-F L 1 	 99 C.K...C.KOOOAA.B.....BDDFF.G.E.IIG.E
-K D 3 	 95 C.....C..OOOAA.B....KBDDFFKG.E.IIG.E
-A R 1 	 97 C.....C..OOO.AAB....KBDDFFKG.E.IIG.E
-C D 2 	 93 .........OOOCAAB..C.KBDDFFKG.E.IIG.E
-O L 3 	 94 ......OOO...CAAB..C.KBDDFFKG.E.IIG.E
-B U 2 	 96 ...B..OOOB..CAA...C.K.DDFFKG.E.IIG.E
-A R 3 	 94 ...B..OOOB..C...AAC.K.DDFFKG.E.IIG.E
+O R 2 	 98 ........OOO.AAKB....KBDDCFFG.ECIIG.E
+C U 1 	 98 ........OOO.AAKB..C.KBDDCFFG.E.IIG.E
+O R 1 	 97 .........OOOAAKB..C.KBDDCFFG.E.IIG.E
+K U 2 	 98 ..K.....KOOOAA.B..C..BDDCFFG.E.IIG.E
+A R 1 	 99 ..K.....KOOO.AAB..C..BDDCFFG.E.IIG.E
+I L 1 	 96 ..K.....KOOO.AAB..C..BDDCFFG.EII.G.E
+C U 3 	 95 C.K...C.KOOO.AAB.....BDD.FFG.EII.G.E
+A L 1 	 98 C.K...C.KOOOAA.B.....BDD.FFG.EII.G.E
+F L 1 	 99 C.K...C.KOOOAA.B.....BDDFF.G.EII.G.E
+K D 4 	 94 C.....C..OOOAA.B.....BDDFFKG.EIIKG.E
+A R 1 	 97 C.....C..OOO.AAB.....BDDFFKG.EIIKG.E
+O L 1 	 96 C.....C.OOO..AAB.....BDDFFKG.EIIKG.E
+C D 2 	 93 ........OOO.CAAB..C..BDDFFKG.EIIKG.E
+O L 2 	 94 ......OOO...CAAB..C..BDDFFKG.EIIKG.E
+B U 2 	 96 ...B..OOOB..CAA...C...DDFFKG.EIIKG.E
+G U 1 	 97 ...B..OOOB..CAA...C..GDDFFKG.EIIK..E
+A R 1 	 96 ...B..OOOB..C.AA..C..GDDFFKG.EIIK..E
+K U 1 	 93 ...B..OOOB..C.AA..C.KGDDFFKG.EII...E
+A R 2 	 94 ...B..OOOB..C...AAC.KGDDFFKG.EII...E
 
 ...B..
 OOOB..
 C...AA
-C.K.DD
+C.KGDD
 FFKG.E
-.IIG.E
+II...E
 
 --------------------------------------------------------------------------------

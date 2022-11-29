@@ -11,10 +11,10 @@ AADO.C
 
 Car fuel available: B:100, O:100, J:100, C:100, A:100, D:100, E:100, F:100, H:100, G:100, I:100
 
-Runtime: 0.09462 seconds 
-Search path length: 79 states 
-Solution path length: 20 moves 
-Solution path: C U 1; H U 1; I L 1; F D 1; E R 1; O D 2; H D 1; J R 2; D U 2; A R 1; B D 2; G U 1; B D 2; H U 1; B U 3; I L 3; O D 1; A R 2; H U 2; A R 1 
+Runtime: 0.07416 seconds 
+Search path length: 75 states 
+Solution path length: 17 moves 
+Solution path: C U 1; H U 1; I L 1; F D 1; E R 1; O D 2; H D 1; J R 2; D U 2; A R 1; B D 2; G U 1; B D 1; H U 1; I L 3; O D 1; A R 3 
 
 C U 1 	 99 B..O.CBJJO.CAADO....DEEF.HG..F.HG.II
 H U 1 	 99 B..O.CBJJO.CAADO...HDEEF.HG..F..G.II
@@ -28,20 +28,17 @@ D U 2 	 98 B.D..CB.DJJCAA.O.....OEE.HGO.F.HGIIF
 A R 1 	 99 B.D..CB.DJJC.AAO.....OEE.HGO.F.HGIIF
 B D 2 	 98 ..D..C..DJJCBAAO..B..OEE.HGO.F.HGIIF
 G U 1 	 99 ..D..C..DJJCBAAO..B.GOEE.HGO.F.H.IIF
-B D 2 	 96 ..D..C..DJJC.AAO....GOEEBHGO.FBH.IIF
-H U 1 	 97 ..D..C..DJJC.AAO...HGOEEBHGO.FB..IIF
-B U 3 	 93 ..D..CB.DJJCBAAO...HGOEE.HGO.F...IIF
-I L 3 	 96 ..D..CB.DJJCBAAO...HGOEE.HGO.FII...F
-O D 1 	 97 ..D..CB.DJJCBAA....HGOEE.HGO.FII.O.F
-A R 2 	 97 ..D..CB.DJJCB..AA..HGOEE.HGO.FII.O.F
-H U 2 	 95 ..D..CBHDJJCBH.AA...GOEE..GO.FII.O.F
-A R 1 	 96 ..D..CBHDJJCBH..AA..GOEE..GO.FII.O.F
+B D 1 	 97 ..D..C..DJJC.AAO..B.GOEEBHGO.F.H.IIF
+H U 1 	 97 ..D..C..DJJC.AAO..BHGOEEBHGO.F...IIF
+I L 3 	 96 ..D..C..DJJC.AAO..BHGOEEBHGO.FII...F
+O D 1 	 97 ..D..C..DJJC.AA...BHGOEEBHGO.FII.O.F
+A R 3 	 96 ..D..C..DJJC....AABHGOEEBHGO.FII.O.F
 
 ..D..C
-BHDJJC
-BH..AA
-..GOEE
-..GO.F
+..DJJC
+....AA
+BHGOEE
+BHGO.F
 II.O.F
 
 --------------------------------------------------------------------------------

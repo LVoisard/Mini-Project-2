@@ -29,31 +29,37 @@
 5 3 2 .DDP.O...P.OAA.P.O....GG............ P97 D98 A97  
 5 3 2 DD.P.O...P.O.AAP.O....GG............ P97 A98 D97  
 5 3 2 DD...O...P.OAA.P.O...PGG............ P98 A97 D97  
-6 3 3 DD...O.....O.AAP.O...PGG...P........ D97 P99 A98  
-6 3 3 DD...O...P.O.AAP.O...PGG............ D97 P98 A98  
-6 3 3 .DD..O.....O.AAP.O...PGG...P........ D98 P99 A98  
-6 3 3 .DD..O.....OAA.P.O...PGG...P........ D98 P99 A97  
-6 3 3 .DD..O...P.O.AAP.O...PGG............ D98 P98 A98  
+7 3 4 DD...O.....O.AAP.O...PGG...P........ D97 P99 A98  
 7 4 3 .DDP.O...P.O.AAP.O.GG............... G97 P97 A98 D98  
 7 4 3 DD.P.O...P.OAA.P.O.GG............... G97 P97 A97 D97  
+7 4 3 DD.P.O...P.O.AAP.OGG................ G96 P97 A98 D97  
 7 4 3 DD.P.O...P.O.AAP.O.GG............... G97 P97 A98 D97  
-7 4 3 .DDP.O...P.OAA.P.O..GG.............. G98 P97 D98 A97  
-7 4 3 .DDP.O...P.OAA.P.O...GG............. G99 P97 D98 A97  
+7 4 3 DD.P.O...P.O.AAP.O..GG.............. G98 P97 A98 D97  
 7 5 2 .DD..O.....O.AA..O.GGP.....P.....P.. P94 G97 P97 A98 D98  
 7 5 2 DD...O.....OAA...O.GGP.....P.....P.. P94 G97 P97 A97 D97  
-7 5 2 DD...O.....O.AAP.O.GGP.....P........ P95 G97 P97 A98 D97  
+7 5 2 DD.P.....P...AAP.OGG...O.....O...... O98 G96 P97 A98 D97  
+7 5 2 DD...O.....O.AA..OGG.P.....P.....P.. P94 G96 P97 A98 D97  
 7 5 2 DD...O.....O.AA..O.GGP.....P.....P.. P94 G97 P97 A98 D97  
-7 4 3 DD.P.O...P.OAA.P.O..GG.............. G98 P97 A97 D97  
-7 5 2 DD...O...P.O.AAP.O.GGP.............. P96 G97 P97 A98 D97  
+7 5 2 DD.P.....P.O.AAP.OGG...O............ O99 G96 P97 A98 D97  
 7 6 1 .DD..O.....O.AA..OGG.P.....P.....P.. G96 P94 G97 P97 A98 D98  
 7 6 1 DD...O.....OAA...OGG.P.....P.....P.. G96 P94 G97 P97 A97 D97  
-7 6 1 DD...O.....O.AA..OGG.P.....P.....P.. G96 P94 G97 P97 A98 D97  
-7 5 2 DD.P.....P...AAP...GG..O.....O.....O O97 G97 P97 A98 D97  
+7 6 1 DD.........O.AA..OGG.P.O...P.....P.. O99 P94 G96 P97 A98 D97  
+7 6 1 DD...........AA...GG.P.O...P.O...P.O O97 P94 G96 P97 A98 D97  
+7 6 1 DD...O.....O...AAOGG.P.....P.....P.. A96 P94 G96 P97 A98 D97  
 7 6 1 DD...........AA....GGP.O...P.O...P.O O97 P94 G97 P97 A98 D97  
-7 6 1 DD...........AA..O.GGP.O...P.O...P.. O98 P94 G97 P97 A98 D97  
+7 4 3 DD.P.O...P.OAA.P.O..GG.............. G98 P97 A97 D97  
+7 5 2 DD...O.....OAA.P.O.GGP.....P........ P95 G97 P97 A97 D97  
+7 5 2 DD...O...P.OAA.P.O.GGP.............. P96 G97 P97 A97 D97  
+7 6 1 DD...O.....O...AAO.GGP.....P.....P.. A94 P94 G97 P97 A97 D97  
+7 7 0 DD.......P...AAP..GG.P.O.....O.....O P92 O97 P94 G96 P97 A98 D97  
+7 7 0 DD.......P...AAP...GGP.O.....O.....O P92 O97 P94 G97 P97 A98 D97  
+7 3 4 DD...O...P.O.AAP.O...PGG............ D97 P98 A98  
 7 4 3 DD.P.O...P.OAA.P.O...GG............. G99 P97 A97 D97  
-7 4 3 DD.P.O...P.O.AAP.OGG................ G96 P97 A98 D97  
-7 5 2 DD.P.....P...AAP.O.GG..O.....O...... O98 G97 P97 A98 D97  
-7 6 1 DD.........O.AA..O.GGP.O...P.....P.. O99 P94 G97 P97 A98 D97  
-7 6 1 DD.P.....P...AAP..GG...O.....O.....O G96 O97 G97 P97 A98 D97  
+7 5 2 DD.P.....P..AA.P...GG..O.....O.....O O97 G97 P97 A97 D97  
+7 6 1 DD...O.....O..AA.O.GGP.....P.....P.. A95 P94 G97 P97 A97 D97  
+7 6 1 ...DDO.....OAA...O.GGP.....P.....P.. D94 P94 G97 P97 A97 D97  
+7 5 2 DD.P.....P..AA.P.O.GG..O.....O...... O98 G97 P97 A97 D97  
+7 6 1 ..DD.O.....OAA...O.GGP.....P.....P.. D95 P94 G97 P97 A97 D97  
+7 6 1 DD..........AA.....GGP.O...P.O...P.O O97 P94 G97 P97 A97 D97  
+7 7 0 DD...........AAP...GGP.O...P.O.....O P93 O97 P94 G97 P97 A98 D97  
 7 7 0 DD..............AA.GGP.O...P.O...P.O A95 O97 P94 G97 P97 A98 D97  

@@ -11,26 +11,27 @@ QGG...
 
 Car fuel available: B:100, O:100, H:100, A:100, P:100, Q:100, R:100, G:100
 
-Runtime: 0.35682 seconds 
-Search path length: 326 states 
-Solution path length: 9 moves 
-Solution path: B L 3; G R 2; P D 1; H U 1; A R 3; P U 3; R L 2; O D 3; A R 1 
+Runtime: 0.28570 seconds 
+Search path length: 361 states 
+Solution path length: 10 moves 
+Solution path: B L 3; G R 3; P D 1; H U 1; A R 3; P U 3; R L 1; G L 2; O D 3; A R 1 
 
 B L 3 	 97 BB...O...H.OAAPH.OQ.PRRRQ.P...QGG...
-G R 2 	 98 BB...O...H.OAAPH.OQ.PRRRQ.P...Q..GG.
-P D 1 	 99 BB...O...H.OAA.H.OQ.PRRRQ.P...Q.PGG.
-H U 1 	 99 BB.H.O...H.OAA...OQ.PRRRQ.P...Q.PGG.
-A R 3 	 97 BB.H.O...H.O...AAOQ.PRRRQ.P...Q.PGG.
-P U 3 	 96 BBPH.O..PH.O..PAAOQ..RRRQ.....Q..GG.
-R L 2 	 98 BBPH.O..PH.O..PAAOQRRR..Q.....Q..GG.
-O D 3 	 97 BBPH....PH....PAA.QRRR.OQ....OQ..GGO
-A R 1 	 96 BBPH....PH....P.AAQRRR.OQ....OQ..GGO
+G R 3 	 97 BB...O...H.OAAPH.OQ.PRRRQ.P...Q...GG
+P D 1 	 99 BB...O...H.OAA.H.OQ.PRRRQ.P...Q.P.GG
+H U 1 	 99 BB.H.O...H.OAA...OQ.PRRRQ.P...Q.P.GG
+A R 3 	 97 BB.H.O...H.O...AAOQ.PRRRQ.P...Q.P.GG
+P U 3 	 96 BBPH.O..PH.O..PAAOQ..RRRQ.....Q...GG
+R L 1 	 99 BBPH.O..PH.O..PAAOQ.RRR.Q.....Q...GG
+G L 2 	 95 BBPH.O..PH.O..PAAOQ.RRR.Q.....Q.GG..
+O D 3 	 97 BBPH....PH....PAA.Q.RRROQ....OQ.GG.O
+A R 1 	 96 BBPH....PH....P.AAQ.RRROQ....OQ.GG.O
 
 BBPH..
 ..PH..
 ..P.AA
-QRRR.O
+Q.RRRO
 Q....O
-Q..GGO
+Q.GG.O
 
 --------------------------------------------------------------------------------

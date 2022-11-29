@@ -11,7 +11,7 @@ EFFG.P
 
 Car fuel available: B:100, O:100, C:100, D:100, A:100, P:100, E:100, Q:100, F:100, G:100, H:100
 
-Runtime: 5.15342 seconds 
+Runtime: 8.34361 seconds 
 Search path length: 9892 states 
 Solution path length: 26 moves 
 Solution path: E D 1; Q L 1; G U 2; D L 1; C L 1; P U 2; F R 3; G D 2; Q R 3; O D 3; A R 1; E U 4; A L 1; O U 3; Q L 3; G U 2; H L 4; F L 4; G D 2; Q R 3; O D 3; A R 3; O U 3; Q L 1; P D 3; A R 1 

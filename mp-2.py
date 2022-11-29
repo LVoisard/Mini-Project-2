@@ -19,12 +19,12 @@ solvers = [
     RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.BlockingVehiclesHeuristic()), 
     RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.BlockedPositionsHeuristic()),
     RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.BlockingVehiclesHeuristic(3)),
-    RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.PositionsHeuristic()),
+    RushHourPuzzleSolver.GBFSRushHourSolver(Heuristics.CustomHeuristic()),
     #A STAR
     RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.BlockingVehiclesHeuristic()),
     RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.BlockedPositionsHeuristic()),
     RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.BlockingVehiclesHeuristic(3)),
-    RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.PositionsHeuristic())]
+    RushHourPuzzleSolver.ASTARRushHourSolver(Heuristics.CustomHeuristic())]
     
 def write_solution_to_file(file_name, initial_puzzle, move_order, search_states, runtime):
     directory = 'Output'

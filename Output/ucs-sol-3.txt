@@ -11,7 +11,7 @@ Initial board configuration: .............AAO...BBO.P.C.O.P.CDD.P
 
 Car fuel available: A:100, O:100, B:100, P:100, C:100, D:100
 
-Runtime: 0.26761 seconds 
+Runtime: 0.38653 seconds 
 Search path length: 774 states 
 Solution path length: 14 moves 
 Solution path: P U 3; D R 2; O U 2; B R 3; O D 3; A R 1; C U 4; A L 2; O U 3; D L 3; B L 3; P D 3; O D 3; A R 4 

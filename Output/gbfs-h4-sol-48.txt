@@ -11,38 +11,37 @@ QQQDFP
 
 Car fuel available: A:100, O:100, B:100, C:100, P:100, D:100, F:100, Q:100
 
-Runtime: 0.24723 seconds 
-Search path length: 254 states 
-Solution path length: 21 moves 
-Solution path: O U 2; C L 1; P U 3; C R 2; D U 4; C L 2; F U 1; P D 1; Q R 1; P D 2; F U 3; C R 1; Q R 1; P U 2; Q R 1; O D 3; A R 3; O U 2; Q L 2; P D 2; A R 1 
+Runtime: 0.12483 seconds 
+Search path length: 187 states 
+Solution path length: 20 moves 
+Solution path: O U 2; C L 1; P U 3; C R 2; D U 4; C L 1; P D 3; Q R 1; C L 1; F U 4; C R 1; P U 3; Q R 2; O D 3; A R 3; O U 3; Q L 3; C L 1; P D 3; A R 1 
 
 O U 2 	 98 ..O.....O...AAO...BB.CCP...DFPQQQDFP
 C L 1 	 99 ..O.....O...AAO...BBCC.P...DFPQQQDFP
 P U 3 	 97 ..O..P..O..PAAO..PBBCC.....DF.QQQDF.
 C R 2 	 97 ..O..P..O..PAAO..PBB..CC...DF.QQQDF.
 D U 4 	 96 ..OD.P..OD.PAAO..PBB..CC....F.QQQ.F.
-C L 2 	 95 ..OD.P..OD.PAAO..PBBCC......F.QQQ.F.
-F U 1 	 99 ..OD.P..OD.PAAO..PBBCCF.....F.QQQ...
-P D 1 	 96 ..OD....OD.PAAO..PBBCCFP....F.QQQ...
-Q R 1 	 99 ..OD....OD.PAAO..PBBCCFP....F..QQQ..
-P D 2 	 94 ..OD....OD..AAO...BBCCFP....FP.QQQ.P
-F U 3 	 96 ..ODF...ODF.AAO...BBCC.P.....P.QQQ.P
+C L 1 	 96 ..OD.P..OD.PAAO..PBB.CC.....F.QQQ.F.
+P D 3 	 94 ..OD....OD..AAO...BB.CCP....FPQQQ.FP
+Q R 1 	 99 ..OD....OD..AAO...BB.CCP....FP.QQQFP
+C L 1 	 95 ..OD....OD..AAO...BBCC.P....FP.QQQFP
+F U 4 	 96 ..ODF...ODF.AAO...BBCC.P.....P.QQQ.P
 C R 1 	 94 ..ODF...ODF.AAO...BB.CCP.....P.QQQ.P
-Q R 1 	 98 ..ODF...ODF.AAO...BB.CCP.....P..QQQP
-P U 2 	 92 ..ODF...ODFPAAO..PBB.CCP........QQQ.
-Q R 1 	 97 ..ODF...ODFPAAO..PBB.CCP.........QQQ
-O D 3 	 95 ...DF....DFPAA...PBBOCCP..O.....OQQQ
-A R 3 	 97 ...DF....DFP...AAPBBOCCP..O.....OQQQ
-O U 2 	 93 ...DF...ODFP..OAAPBBOCCP.........QQQ
-Q L 2 	 95 ...DF...ODFP..OAAPBBOCCP.......QQQ..
-P D 2 	 90 ...DF...ODF...OAA.BBOCCP.....P.QQQ.P
-A R 1 	 96 ...DF...ODF...O.AABBOCCP.....P.QQQ.P
+P U 3 	 91 ..ODFP..ODFPAAO..PBB.CC........QQQ..
+Q R 2 	 97 ..ODFP..ODFPAAO..PBB.CC..........QQQ
+O D 3 	 95 ...DFP...DFPAA...PBBOCC...O.....OQQQ
+A R 3 	 97 ...DFP...DFP...AAPBBOCC...O.....OQQQ
+O U 3 	 92 ..ODFP..ODFP..OAAPBB.CC..........QQQ
+Q L 3 	 94 ..ODFP..ODFP..OAAPBB.CC.......QQQ...
+C L 1 	 93 ..ODFP..ODFP..OAAPBBCC........QQQ...
+P D 3 	 88 ..ODF...ODF...OAA.BBCC.P.....PQQQ..P
+A R 1 	 96 ..ODF...ODF...O.AABBCC.P.....PQQQ..P
 
-...DF.
+..ODF.
 ..ODF.
 ..O.AA
-BBOCCP
+BBCC.P
 .....P
-.QQQ.P
+QQQ..P
 
 --------------------------------------------------------------------------------

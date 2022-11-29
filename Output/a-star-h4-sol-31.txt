@@ -11,25 +11,25 @@ QQQ..P
 
 Car fuel available: O:100, A:100, P:100, Q:100
 
-Runtime: 0.05214 seconds 
-Search path length: 86 states 
+Runtime: 0.06574 seconds 
+Search path length: 93 states 
 Solution path length: 8 moves 
-Solution path: P U 3; Q R 3; O D 3; A R 3; O U 2; Q L 2; P D 3; A R 1 
+Solution path: P U 3; Q R 3; O D 3; A R 3; O U 1; Q L 3; P D 3; A R 1 
 
 P U 3 	 97 ..O..P..O..PAAO..P............QQQ...
 Q R 3 	 97 ..O..P..O..PAAO..P...............QQQ
 O D 3 	 97 .....P.....PAA...P..O.....O.....OQQQ
 A R 3 	 97 .....P.....P...AAP..O.....O.....OQQQ
-O U 2 	 95 .....P..O..P..OAAP..O............QQQ
-Q L 2 	 95 .....P..O..P..OAAP..O..........QQQ..
-P D 3 	 94 ........O.....OAA...O..P.....P.QQQ.P
-A R 1 	 96 ........O.....O.AA..O..P.....P.QQQ.P
+O U 1 	 96 .....P.....P..OAAP..O.....O......QQQ
+Q L 3 	 94 .....P.....P..OAAP..O.....O...QQQ...
+P D 3 	 94 ..............OAA...O..P..O..PQQQ..P
+A R 1 	 96 ..............O.AA..O..P..O..PQQQ..P
 
 ......
-..O...
+......
 ..O.AA
 ..O..P
-.....P
-.QQQ.P
+..O..P
+QQQ..P
 
 --------------------------------------------------------------------------------

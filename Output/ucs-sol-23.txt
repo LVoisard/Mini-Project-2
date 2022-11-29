@@ -11,7 +11,7 @@ PJJHKK
 
 Car fuel available: B:100, C:100, D:100, E:100, O:100, F:100, A:100, P:100, G:100, H:100, I:100, J:100, K:100
 
-Runtime: 4.67656 seconds 
+Runtime: 5.99130 seconds 
 Search path length: 8302 states 
 Solution path length: 16 moves 
 Solution path: E D 2; F D 1; A L 3; O U 1; G R 1; H U 3; E U 2; K L 1; I L 2; G L 2; O D 3; D D 3; C R 2; E U 1; H U 1; A R 4 

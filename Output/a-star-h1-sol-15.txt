@@ -11,7 +11,7 @@ JJGH..
 
 Car fuel available: B:100, C:100, D:100, O:100, P:100, A:100, E:100, F:100, G:100, H:100, I:100, J:100
 
-Runtime: 0.89506 seconds 
+Runtime: 1.42590 seconds 
 Search path length: 2043 states 
 Solution path length: 25 moves 
 Solution path: A R 1; B D 1; C L 1; D L 1; P U 1; F R 1; H U 1; O U 1; E L 1; G U 1; J R 4; H D 1; G D 1; E R 2; B D 3; A L 1; E L 2; H U 3; F L 1; I L 1; J L 1; P D 3; D R 1; H U 1; A R 3 

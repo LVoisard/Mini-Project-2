@@ -11,25 +11,25 @@ Initial board configuration: .............AAO...BBO.P.C.O.P.CDD.P
 
 Car fuel available: A:100, O:100, B:100, P:100, C:100, D:100
 
-Runtime: 0.19939 seconds 
-Search path length: 540 states 
+Runtime: 0.42239 seconds 
+Search path length: 531 states 
 Solution path length: 14 moves 
-Solution path: O U 2; P U 3; B R 3; D R 2; O D 3; A R 2; C U 4; A L 3; O U 3; D L 3; B L 3; P D 3; O D 3; A R 4 
+Solution path: O U 2; P U 3; B R 3; C U 1; D L 1; O D 3; A R 1; C U 3; A L 2; O U 3; B L 3; O D 3; P D 3; A R 4 
 
 O U 2 	 98 ...O.....O...AAO...BB..P.C...P.CDD.P
 P U 3 	 97 ...O.P...O.P.AAO.P.BB....C.....CDD..
 B R 3 	 97 ...O.P...O.P.AAO.P....BB.C.....CDD..
-D R 2 	 98 ...O.P...O.P.AAO.P....BB.C.....C..DD
-O D 3 	 95 .....P.....P.AA..P...OBB.C.O...C.ODD
-A R 2 	 98 .....P.....P...AAP...OBB.C.O...C.ODD
-C U 4 	 96 .C...P.C...P...AAP...OBB...O.....ODD
-A L 3 	 95 .C...P.C...PAA...P...OBB...O.....ODD
-O U 3 	 92 .C.O.P.C.O.PAA.O.P....BB..........DD
-D L 3 	 95 .C.O.P.C.O.PAA.O.P....BB.......DD...
+C U 1 	 99 ...O.P...O.P.AAO.P.C..BB.C......DD..
+D L 1 	 99 ...O.P...O.P.AAO.P.C..BB.C.....DD...
+O D 3 	 95 .....P.....P.AA..P.C.OBB.C.O...DDO..
+A R 1 	 99 .....P.....P..AA.P.C.OBB.C.O...DDO..
+C U 3 	 96 .C...P.C...P..AA.P...OBB...O...DDO..
+A L 2 	 97 .C...P.C...PAA...P...OBB...O...DDO..
+O U 3 	 92 .C.O.P.C.O.PAA.O.P....BB.......DD...
 B L 3 	 94 .C.O.P.C.O.PAA.O.P.BB..........DD...
-P D 3 	 94 .C.O...C.O..AA.O...BB..P.....P.DD..P
-O D 3 	 89 .C.....C....AA.....BBO.P...O.P.DDO.P
-A R 4 	 91 .C.....C........AA.BBO.P...O.P.DDO.P
+O D 3 	 89 .C...P.C...PAA...P.BBO.....O...DDO..
+P D 3 	 94 .C.....C....AA.....BBO.P...O.P.DDO.P
+A R 4 	 93 .C.....C........AA.BBO.P...O.P.DDO.P
 
 .C....
 .C....

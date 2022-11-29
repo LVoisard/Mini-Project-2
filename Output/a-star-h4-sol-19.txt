@@ -11,8 +11,8 @@ HIIJJ.
 
 Car fuel available: O:100, B:100, P:100, Q:100, C:100, D:100, A:100, E:100, F:100, G:100, H:100, I:100, J:100
 
-Runtime: 0.02484 seconds 
-Search path length: 70 states 
+Runtime: 0.07978 seconds 
+Search path length: 72 states 
 Solution path length: 28 moves 
 Solution path: J R 1; F D 1; G L 1; P D 2; B R 1; O R 1; Q U 1; H U 1; I L 1; E D 1; G L 2; D D 1; C R 3; D U 1; G R 2; E U 1; I R 1; H D 1; Q D 1; O L 1; D U 1; A R 2; E U 2; G L 2; F U 1; J L 1; P D 1; A R 1 
 

@@ -11,10 +11,10 @@ Initial board configuration: .BCCDE.B.FDE.AAF.G..HH.G...I.....I..
 
 Car fuel available: B:100, C:100, D:100, E:100, F:100, A:100, G:100, H:100, I:100
 
-Runtime: 0.32382 seconds 
-Search path length: 613 states 
-Solution path length: 27 moves 
-Solution path: G D 2; H L 1; D D 4; A L 1; E D 1; C R 2; H R 2; F U 1; A R 3; H L 1; B D 1; D U 1; B D 1; A L 1; D D 1; B D 2; H L 2; D U 1; A L 2; F D 2; C L 4; F U 2; G U 1; E U 1; H R 1; G D 1; A R 4 
+Runtime: 0.67031 seconds 
+Search path length: 820 states 
+Solution path length: 29 moves 
+Solution path: G D 2; H L 1; D D 4; A L 1; E D 1; C R 2; D U 1; F U 1; A R 3; B D 1; D D 1; H R 2; B D 3; A L 3; H L 3; A R 1; H R 2; D U 1; A L 1; H L 1; F D 2; H L 1; C L 3; F U 2; E U 1; D U 3; A R 1; H R 4; A R 3 
 
 G D 2 	 98 .BCCDE.B.FDE.AAF....HH.....I.G...I.G
 H L 1 	 99 .BCCDE.B.FDE.AAF...HH......I.G...I.G
@@ -22,33 +22,35 @@ D D 4 	 96 .BCC.E.B.F.E.AAF...HH......IDG...IDG
 A L 1 	 99 .BCC.E.B.F.EAA.F...HH......IDG...IDG
 E D 1 	 99 .BCC...B.F.EAA.F.E.HH......IDG...IDG
 C R 2 	 98 .B..CC.B.F.EAA.F.E.HH......IDG...IDG
-H R 2 	 97 .B..CC.B.F.EAA.F.E...HH....IDG...IDG
-F U 1 	 99 .B.FCC.B.F.EAA...E...HH....IDG...IDG
-A R 3 	 96 .B.FCC.B.F.E...AAE...HH....IDG...IDG
-H L 1 	 96 .B.FCC.B.F.E...AAE..HH.....IDG...IDG
-B D 1 	 99 ...FCC.B.F.E.B.AAE..HH.....IDG...IDG
-D U 1 	 95 ...FCC.B.F.E.B.AAE..HHD....IDG...I.G
-B D 1 	 98 ...FCC...F.E.B.AAE.BHHD....IDG...I.G
-A L 1 	 95 ...FCC...F.E.BAA.E.BHHD....IDG...I.G
-D D 1 	 94 ...FCC...F.E.BAA.E.BHH.....IDG...IDG
-B D 2 	 96 ...FCC...F.E..AA.E..HH...B.IDG.B.IDG
-H L 2 	 94 ...FCC...F.E..AA.EHH.....B.IDG.B.IDG
-D U 1 	 93 ...FCC...F.E..AA.EHH..D..B.IDG.B.I.G
-A L 2 	 93 ...FCC...F.EAA...EHH..D..B.IDG.B.I.G
-F D 2 	 97 ....CC.....EAA.F.EHH.FD..B.IDG.B.I.G
-C L 4 	 94 CC.........EAA.F.EHH.FD..B.IDG.B.I.G
-F U 2 	 95 CC.F.....F.EAA...EHH..D..B.IDG.B.I.G
-G U 1 	 97 CC.F.....F.EAA...EHH..DG.B.IDG.B.I..
-E U 1 	 98 CC.F.E...F.EAA....HH..DG.B.IDG.B.I..
-H R 1 	 93 CC.F.E...F.EAA.....HH.DG.B.IDG.B.I..
-G D 1 	 96 CC.F.E...F.EAA.....HH.D..B.IDG.B.I.G
-A R 4 	 89 CC.F.E...F.E....AA.HH.D..B.IDG.B.I.G
+D U 1 	 95 .B..CC.B.F.EAA.F.E.HH.D....IDG...I.G
+F U 1 	 99 .B.FCC.B.F.EAA...E.HH.D....IDG...I.G
+A R 3 	 96 .B.FCC.B.F.E...AAE.HH.D....IDG...I.G
+B D 1 	 99 ...FCC.B.F.E.B.AAE.HH.D....IDG...I.G
+D D 1 	 94 ...FCC.B.F.E.B.AAE.HH......IDG...IDG
+H R 2 	 97 ...FCC.B.F.E.B.AAE...HH....IDG...IDG
+B D 3 	 96 ...FCC...F.E...AAE...HH..B.IDG.B.IDG
+A L 3 	 93 ...FCC...F.EAA...E...HH..B.IDG.B.IDG
+H L 3 	 94 ...FCC...F.EAA...EHH.....B.IDG.B.IDG
+A R 1 	 92 ...FCC...F.E.AA..EHH.....B.IDG.B.IDG
+H R 2 	 92 ...FCC...F.E.AA..E..HH...B.IDG.B.IDG
+D U 1 	 93 ...FCC...F.E.AA..E..HHD..B.IDG.B.I.G
+A L 1 	 91 ...FCC...F.EAA...E..HHD..B.IDG.B.I.G
+H L 1 	 91 ...FCC...F.EAA...E.HH.D..B.IDG.B.I.G
+F D 2 	 97 ....CC.....EAA.F.E.HHFD..B.IDG.B.I.G
+H L 1 	 90 ....CC.....EAA.F.EHH.FD..B.IDG.B.I.G
+C L 3 	 95 .CC........EAA.F.EHH.FD..B.IDG.B.I.G
+F U 2 	 95 .CCF.....F.EAA...EHH..D..B.IDG.B.I.G
+E U 1 	 98 .CCF.E...F.EAA....HH..D..B.IDG.B.I.G
+D U 3 	 90 .CCFDE...FDEAA....HH.....B.I.G.B.I.G
+A R 1 	 90 .CCFDE...FDE.AA...HH.....B.I.G.B.I.G
+H R 4 	 86 .CCFDE...FDE.AA.......HH.B.I.G.B.I.G
+A R 3 	 87 .CCFDE...FDE....AA....HH.B.I.G.B.I.G
 
-CC.F.E
-...F.E
+.CCFDE
+...FDE
 ....AA
-.HH.D.
-.B.IDG
+....HH
+.B.I.G
 .B.I.G
 
 --------------------------------------------------------------------------------

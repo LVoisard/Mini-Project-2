@@ -11,7 +11,7 @@ J..PLL
 
 Car fuel available: B:100, C:100, O:100, D:100, E:100, A:100, F:100, G:100, P:100, H:100, I:100, J:100, K:100, L:100
 
-Runtime: 0.98586 seconds 
+Runtime: 1.84516 seconds 
 Search path length: 1666 states 
 Solution path length: 26 moves 
 Solution path: P U 1; L L 1; I D 1; E D 1; D R 1; H U 1; P U 1; K R 2; F D 2; A R 1; G R 1; J U 4; G L 1; A L 1; F U 2; L L 3; K L 3; P D 2; H D 2; F D 2; A R 3; C D 1; O L 1; D L 1; E U 2; A R 1 

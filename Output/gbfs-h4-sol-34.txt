@@ -11,10 +11,10 @@ AAB..P
 
 Car fuel available: O:100, P:100, A:100, B:100, J:100, C:100, D:100, Q:100
 
-Runtime: 0.11396 seconds 
-Search path length: 94 states 
-Solution path length: 16 moves 
-Solution path: B U 1; J U 3; C L 1; P D 2; C L 3; J D 3; P U 2; O R 2; D U 1; Q L 2; P D 3; O R 1; B U 1; A R 1; Q L 1; A R 3 
+Runtime: 0.07259 seconds 
+Search path length: 98 states 
+Solution path length: 13 moves 
+Solution path: B U 1; J U 3; C L 1; P D 2; C L 3; J D 3; O R 3; B U 1; D U 1; Q L 1; A R 2; P D 1; A R 2 
 
 B U 1 	 99 OOO..P..B..PAAB..P...JCC..DJ....DQQQ
 J U 3 	 97 OOOJ.P..BJ.PAAB..P....CC..D.....DQQQ
@@ -22,22 +22,19 @@ C L 1 	 99 OOOJ.P..BJ.PAAB..P...CC...D.....DQQQ
 P D 2 	 98 OOOJ....BJ..AAB..P...CCP..D..P..DQQQ
 C L 3 	 96 OOOJ....BJ..AAB..PCC...P..D..P..DQQQ
 J D 3 	 94 OOO.....B...AAB..PCC.J.P..DJ.P..DQQQ
-P U 2 	 96 OOO..P..B..PAAB..PCC.J....DJ....DQQQ
-O R 2 	 98 ..OOOP..B..PAAB..PCC.J....DJ....DQQQ
-D U 1 	 99 ..OOOP..B..PAAB..PCCDJ....DJ.....QQQ
-Q L 2 	 98 ..OOOP..B..PAAB..PCCDJ....DJ...QQQ..
-P D 3 	 93 ..OOO...B...AAB...CCDJ.P..DJ.P.QQQ.P
-O R 1 	 97 ...OOO..B...AAB...CCDJ.P..DJ.P.QQQ.P
-B U 1 	 98 ..BOOO..B...AA....CCDJ.P..DJ.P.QQQ.P
-A R 1 	 99 ..BOOO..B....AA...CCDJ.P..DJ.P.QQQ.P
-Q L 1 	 97 ..BOOO..B....AA...CCDJ.P..DJ.PQQQ..P
-A R 3 	 96 ..BOOO..B.......AACCDJ.P..DJ.PQQQ..P
+O R 3 	 97 ...OOO..B...AAB..PCC.J.P..DJ.P..DQQQ
+B U 1 	 98 ..BOOO..B...AA...PCC.J.P..DJ.P..DQQQ
+D U 1 	 99 ..BOOO..B...AA...PCCDJ.P..DJ.P...QQQ
+Q L 1 	 99 ..BOOO..B...AA...PCCDJ.P..DJ.P..QQQ.
+A R 2 	 98 ..BOOO..B.....AA.PCCDJ.P..DJ.P..QQQ.
+P D 1 	 97 ..BOOO..B.....AA..CCDJ.P..DJ.P..QQQP
+A R 2 	 96 ..BOOO..B.......AACCDJ.P..DJ.P..QQQP
 
 ..BOOO
 ..B...
 ....AA
 CCDJ.P
 ..DJ.P
-QQQ..P
+..QQQP
 
 --------------------------------------------------------------------------------

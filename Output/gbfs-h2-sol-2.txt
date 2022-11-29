@@ -11,7 +11,7 @@ GGEHH.
 
 Car fuel available: B:100, O:100, C:100, P:100, A:100, D:100, Q:100, E:100, F:100, G:100, H:100
 
-Runtime: 0.03698 seconds 
+Runtime: 0.05081 seconds 
 Search path length: 63 states 
 Solution path length: 13 moves 
 Solution path: O L 1; F L 1; O L 1; D U 2; P U 1; A R 1; P D 3; Q R 2; B D 3; O L 1; B U 2; C U 1; A R 3 

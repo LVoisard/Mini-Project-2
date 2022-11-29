@@ -57,14 +57,14 @@ class CustomHeuristic(object):
                 blocking_up = 0
                 blocking_down = 0
                 if vehicle.size < 3:
-                    for y in range(0, vehicle.y):
+                    for y in range(0, ambulance.y):
                         blocking_v = parkingLot.grid[y][vehicle.x]
                         if blocking_v and blocking_v not in indirect_blocking_vehicles:
                             indirect_blocking_vehicles.append(blocking_v)
                             blocking_up += 1
                 else:
                     blocking_up += 100
-                for y in range(vehicle.y + vehicle.size, min(vehicle.y + vehicle.size + vehicle.size - 1, parkingLot.sizeY)):
+                for y in range(ambulance.y + 1, min(ambulance.y + vehicle.size, parkingLot.sizeY)):
                     blocking_v = parkingLot.grid[y][vehicle.x]
                     if blocking_v and blocking_v not in indirect_blocking_vehicles:
                         indirect_blocking_vehicles.append(blocking_v)

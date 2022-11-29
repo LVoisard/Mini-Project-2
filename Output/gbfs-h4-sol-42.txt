@@ -11,10 +11,10 @@ AAO...
 
 Car fuel available: B:100, K:100, I:100, A:100, O:100, P:100, D:100, Q:100
 
-Runtime: 0.26842 seconds 
-Search path length: 274 states 
-Solution path length: 19 moves 
-Solution path: Q L 1; O U 1; I D 1; K R 3; I U 1; O U 1; P L 3; D U 1; Q R 2; D U 2; P R 3; O D 3; I D 1; K L 3; D U 1; I U 1; A R 2; B D 1; A R 2 
+Runtime: 0.20350 seconds 
+Search path length: 248 states 
+Solution path length: 20 moves 
+Solution path: Q L 1; O U 1; I D 1; K R 3; I U 1; O U 1; P L 3; D U 1; Q R 2; D U 2; P R 3; O D 3; A R 3; O U 2; Q L 1; B D 1; O U 1; P L 1; D D 2; A R 1 
 
 Q L 1 	 99 BKKI..B..I..AAO.....OPPP..O..D.QQQ.D
 O U 1 	 99 BKKI..B.OI..AAO.....OPPP.....D.QQQ.D
@@ -28,19 +28,20 @@ Q R 2 	 97 B.OIKKB.OI..AAO...PPP..D.....D...QQQ
 D U 2 	 97 B.OIKKB.OI.DAAO..DPPP............QQQ
 P R 3 	 94 B.OIKKB.OI.DAAO..D...PPP.........QQQ
 O D 3 	 95 B..IKKB..I.DAA...D..OPPP..O.....OQQQ
-I D 1 	 97 B...KKB..I.DAA.I.D..OPPP..O.....OQQQ
-K L 3 	 94 BKK...B..I.DAA.I.D..OPPP..O.....OQQQ
-D U 1 	 96 BKK..DB..I.DAA.I....OPPP..O.....OQQQ
-I U 1 	 96 BKKI.DB..I.DAA......OPPP..O.....OQQQ
-A R 2 	 98 BKKI.DB..I.D..AA....OPPP..O.....OQQQ
-B D 1 	 99 .KKI.DB..I.DB.AA....OPPP..O.....OQQQ
-A R 2 	 96 .KKI.DB..I.DB...AA..OPPP..O.....OQQQ
+A R 3 	 97 B..IKKB..I.D...AAD..OPPP..O.....OQQQ
+O U 2 	 93 B..IKKB.OI.D..OAAD..OPPP.........QQQ
+Q L 1 	 96 B..IKKB.OI.D..OAAD..OPPP........QQQ.
+B D 1 	 99 ...IKKB.OI.DB.OAAD..OPPP........QQQ.
+O U 1 	 92 ..OIKKB.OI.DB.OAAD...PPP........QQQ.
+P L 1 	 93 ..OIKKB.OI.DB.OAAD..PPP.........QQQ.
+D D 2 	 95 ..OIKKB.OI..B.OAA...PPPD.....D..QQQ.
+A R 1 	 96 ..OIKKB.OI..B.O.AA..PPPD.....D..QQQ.
 
-.KKI.D
-B..I.D
-B...AA
-..OPPP
-..O...
-..OQQQ
+..OIKK
+B.OI..
+B.O.AA
+..PPPD
+.....D
+..QQQ.
 
 --------------------------------------------------------------------------------

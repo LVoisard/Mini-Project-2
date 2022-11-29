@@ -11,7 +11,7 @@ AADEFG
 
 Car fuel available: B:100, C:100, D:100, E:100, F:100, G:100, A:100, H:100, I:100
 
-Runtime: 2.23865 seconds 
+Runtime: 1.50168 seconds 
 Search path length: 2387 states 
 Solution path length: 7 moves 
 Solution path: H L 2; D D 3; E D 3; I L 2; G D 2; F D 2; A R 4 
